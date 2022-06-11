@@ -140,8 +140,10 @@ def is_user_exists(all_sites,username):
 import socket
 def get_data_from_breach_api(request, param):
     try:
-        ipaddress = socket.gethostbyname('127.0.0.2')
-        data = requests.get(f'http://127.0.0.1:8000/panel/unmetered_api/?{param}', headers={'ip':ipaddress})
+    # ipaddress = socket.gethostbyname('testappcyber2.herokuapp.com')
+        ipaddress = '127.0.0.2' #change for heroku because herko doesnt provide static ip for hosting uncomment above line
+        data = requests.get(f'https://testappcyber2.herokuapp.com//panel/unmetered_api/?{param}', headers={'ip':ipaddress})
+        print(data)
         data = data.json()
         try:
             data = data['data']

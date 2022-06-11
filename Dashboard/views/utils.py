@@ -142,7 +142,7 @@ def get_data_from_breach_api(request, param):
     try:
     # ipaddress = socket.gethostbyname('testappcyber2.herokuapp.com')
         ipaddress = '127.0.0.2' #change for heroku because herko doesnt provide static ip for hosting uncomment above line
-        data = requests.get(f'https://testappcyber2.herokuapp.com//panel/unmetered_api/?{param}', headers={'ip':ipaddress})
+        data = requests.get(f'https://testappcyber2.herokuapp.com/panel/unmetered_api/?{param}', headers={'ip':ipaddress})
         print(data)
         data = data.json()
         try:

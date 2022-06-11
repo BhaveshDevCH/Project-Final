@@ -16,7 +16,6 @@ future==0.16.0
 geoip2==0.1.0
 gunicorn==20.1.0
 Jinja2==3.0.3
-mysqlclient==2.0.31
 Pillow==8.3.2
 ppdeep==20200505
 psycopg2==2.9.3
@@ -26,7 +25,6 @@ pylibscrypt==2.0.0
 pyOpenSSL==21.0.0
 python-dateutil==2.8.2
 python-dotenv==0.19.2
-python-magic==0.4.26
 pytz==2021.3
 PyYAML==5.4.1
 querycontacts==2.0.0

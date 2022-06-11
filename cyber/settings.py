@@ -95,7 +95,7 @@ DATABASES = {
         'NAME': 'd51rv6huki4o1n', 
         'USER': 'boyfciltqfnjyl', 
         'PASSWORD': 'd3ff81a09d4010da0664dc4b7dc73fbc7834c8a5947fdad6b8b362f5f516e998',
-        'HOST': 'postgres://boyfciltqfnjyl:d3ff81a09d4010da0664dc4b7dc73fbc7834c8a5947fdad6b8b362f5f516e998@ec2-52-206-182-219.compute-1.amazonaws.com:5432/d51rv6huki4o1n', 
+        'HOST': 'ec2-52-206-182-219.compute-1.amazonaws.com', 
         'PORT': '5432',
     }
 }

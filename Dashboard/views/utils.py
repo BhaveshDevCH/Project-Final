@@ -103,7 +103,7 @@ def validate(maillist, uname):
     return ans
 
 def fetch_mail():
-    data=requests.get("http://127.0.0.1:8000/static/domain_json.json")
+    data=requests.get("http://testappcyber.herokuapp.com/static/domain_json.json")
     # print(data.json())
     mails = data.json()
     return mails
@@ -112,7 +112,7 @@ def domain_filter(root_domains, mails):
     return [mails[i] for i in root_domains]
 
 def fetch_sites(categories):
-    data=requests.get("http://127.0.0.1:8000/static/all_sites.json")
+    data=requests.get("http://testappcyber.herokuapp.com/static/all_sites.json")
     all_sites = data.json()
     return dict([(category, all_sites[category]) for category in categories])
 

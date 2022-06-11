@@ -92,10 +92,10 @@ WSGI_APPLICATION = 'cyber.wsgi.application'
 DATABASES = {
 'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Garud', 
-        'USER': 'postgres', 
-        'PASSWORD': 'Bhavesh@123',
-        'HOST': '127.0.0.1', 
+        'NAME': 'd51rv6huki4o1n', 
+        'USER': 'boyfciltqfnjyl', 
+        'PASSWORD': 'd3ff81a09d4010da0664dc4b7dc73fbc7834c8a5947fdad6b8b362f5f516e998',
+        'HOST': 'postgres://boyfciltqfnjyl:d3ff81a09d4010da0664dc4b7dc73fbc7834c8a5947fdad6b8b362f5f516e998@ec2-52-206-182-219.compute-1.amazonaws.com:5432/d51rv6huki4o1n', 
         'PORT': '5432',
     }
 }
@@ -112,6 +112,8 @@ DATABASES = {
 #         # 'PORT':'3306'
 #     }
 # }
+
+# PGUSER=postgres PGPASSWORD=Bhavesh@123  heroku pg:push postgres://localhost/Garud postgresql-triangular-61968
 
 
 

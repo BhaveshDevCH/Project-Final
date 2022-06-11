@@ -13,6 +13,7 @@ djangorestframework==3.13.1
 dnspython==2.1.0
 dnstwist==20220120
 future==0.16.0
+requests-futures==1.0.0
 geoip2==0.1.0
 gunicorn==20.1.0
 Jinja2==3.0.3

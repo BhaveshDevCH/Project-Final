@@ -1,0 +1,136 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block title %} Exposures {% endblock title %}
+ {% block content%}
+<div class="app-content  my-3 my-md-5">
+    <div class="side-app">
+        <div class="bg-white p-3 header-secondary row">
+
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Monitor Your Domain's Security</h3>
+                    </div>
+                    <div class=" card-body">
+                        <form action="{% url 'exp' %}" method="post">
+                            {% csrf_token %}
+                            <div class="d-flex">
+                                <div class="input-group wd-150">
+                                    <div class="input-group-prepend btn btn-primary ">
+                                        <i class="fa fa-2x fa-link tx-16 lh-0 op-6"></i>
+
+                                    </div>
+                                    <!-- input-group-prepend -->
+                                    <input class="form-control" id="tp3" placeholder="Search Url's,Keywords,Names etc"
+                                        type="text" id="e_search" name="e_search">
+                                    <button class="btn btn btn-primary " type="submit"
+                                        id="setTimeButton">Search</button>
+                                </div>
+                                <!-- input-group -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body text-center list-icons">
+                        <h3 class="card-text mt-3 mb-3">Domain's Monitored</h3>
+                        <i class="si si-link text-primary"></i><span class="h1">{{sitesMonitored}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body text-center list-icons">
+                        <h3 class="card-text mt-3 mb-3">Email's Protected</h3>
+                        <i class="si si-envelope text-primary"></i><span class="h1">{{emailMonitored}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                {% if email %}
+                <div class="card mt-5  ">
+                    <div class="table-responsive">
+                        <div class="table-responsive">
+                            <table class="table card-table text-nowrap">
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                        <th>Found on Date</th>
+                                        <th>Found on URL</th>
+                                    </tr>
+                                    {% if search_list %}
+                                    {% for s in search_list %}
+                                    <tr class="border-bottom">
+                                        <td>{{s.email}}</td>
+                                        <td>{{s.password}}</td>
+                                        <td>{{s.date}}</td>
+                                        <td class="text-red">{{s.source}} </td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% else %}
+                                    <tr class="border-bottom">
+                                        <td colspan="4">Not Found</td>
+                                    </tr>
+                                    {% endif %}
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                {% else %}
+
+                <div class="card mt-5  ">
+                    <div class="table-responsive">
+                        <div class="table-responsive">
+                            <table class="table card-table text-nowrap">
+                                <tbody style="color: white;">
+                                    <tr class="border-bottom">
+                                        <th>Url</th>
+                                        <th>Indexed On</th>
+                                        <!-- <th>Keywords</th> -->
+                                        <th>Last Seen</th>
+                                        <th>Snapshots</th>
+                                    </tr>
+                                    {% if search_list %}
+                                    {% for data in search_list %}
+
+
+                                    <tr class="border-bottom">
+                                        <td>{{data.url}}</td>
+                                        <td>{{data.created}}</td>
+                                        <!-- <td><span class="text-secondary ml-2">{{data.keywords}}</span> {% comment %}
+                                            <span class="text-orange ml-2">THREAT</span>
+                                            <span class="text-warning ml-2">DARKWEB</span>
+                                            <span class="text-info ml-2">TOR</span> {% endcomment %}
+                                        </td> -->
+    
+                                        <td>{{data.last_seen}}</td>
+                                        <td class="text-red"><a href="{{data.screenshot.url}}" sour
+                                                class="btn btn-outline-danger">SNAPSHOT</a> </td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% else %}
+                                    <tr class="border-bottom">
+                                        <td colspan="4">Not Found</td>
+                                    </tr>
+                                    {% endif %}
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                {% endif %}
+
+            </div>
+{% endblock content %}

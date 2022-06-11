@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="content-wrap">
+    <div class="main">
+        <div class="container-fluid">
+            <div id="main-content">
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card alert">
+                            <div class="card-header pr">
+                                <h4>SignIn Request</h4>
+                                <form action="" method="get">
+                                    <div class="search-action">
+                                        <div class="search-type dib">
+                                            <input style="width: 135%;" class="form-control input-rounded" name="search" placeholder="Search by Email or Name"
+                                                type="text">
+                                        </div>
+                                    </div>
+                                </form>
+    
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table student-data-table m-t-20">
+                                        <thead>
+                                            <tr>
+                                                <th>Email</th>
+                                                <th>Full Name</th>
+                                                <th>Organization</th>
+                                                <th>Status</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for profile in profiles %}
+                                            <tr>
+                                                <td>{{profile.user.email}}</td>
+                                                <td>{{profile.name}}</td>
+                                                <td>{{profile.organization}}</td>
+                                                <td>{{profile.status}}</td>
+                                                
+                
+                                                <td>
+                                                    <form action="{% url 'users_status' %}" method="POST">
+                                                        {% csrf_token %}
+                                                        <input type="text" name="id" value="{{profile.user.id}}" hidden>
+                                                        {% if profile.status %}
+                                                        <input type="text" name="action" value="deactivate" hidden>
+                                                        <button type="submit" class="btn btn-danger">Deactivate</button>
+                                                        {% else %}
+                                                        <input type="text" value="activate" name="action" hidden>
+                                                        <button type="submit" class="btn btn-success">Activate</button>
+                                                        {% endif %}
+
+                                                    </form>
+                                                    
+                                                    
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+  
+{% endblock body %}
+
+    

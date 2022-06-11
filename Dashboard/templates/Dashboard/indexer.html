@@ -1,0 +1,188 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block title %} Indexer {% endblock title %} {% block content %}
+
+<div class="page">
+    <div class="page-main">
+        <div class="app-content  my-3 my-md-5">
+            <div class="side-app">
+                <div class="bg-white p-3 header-secondary row">
+                    
+                </div>
+                {% for message in messages %}
+                <h3>{{message}}</h3>
+                {% endfor %}
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">Email Protection</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group wd-150">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-envelope-square tx-16 lh-0 op-6"></i>
+                                        </div>
+                                        <!-- input-group-text -->
+                                    </div>
+                                    <!-- input-group-prepend -->
+                                    <form action="" method="POST">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+
+                                            <input type="text" id="tp3" class="form-control" placeholder="Enter your Email to be monitored" value="" name="email_monitor">
+                                            <input type="text" id="tp3" class="form-control" name="email_to_report" placeholder="Email To Report" value="{{data.email}}">
+                                        </div>
+                                </div>
+                                <button class="btn btn btn-primary" type="submit" name="email_protection">Protect</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">Identity Security</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group wd-150">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-envelope-square tx-16 lh-0 op-6"></i>
+                                        </div>
+                                        <!-- input-group-text -->
+                                    </div>
+                                    <!-- input-group-prepend -->
+                                    <form action="" method="POST">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+
+                                            <input type="text" id="tp3" class="form-control" placeholder="Enter your id to be monitor" name="id_monitor" value="">
+                                            <input type="text" id="tp3" class="form-control" name="email_to_report" placeholder="Email to Report" value="{{data.email}}">
+                                        </div>
+                                </div>
+                                <button class="btn btn btn-primary" type="submit" name="id_protection">Protect</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">Site to protect </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group wd-150">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-envelope-square tx-16 lh-0 op-6"></i>
+                                        </div>
+                                        <!-- input-group-text -->
+                                    </div>
+                                    <!-- input-group-prepend -->
+                                    <form action="" method="POST">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <input type="text" id="tp3" class="form-control" placeholder="Enter your site to be monitored" value="" name="site_monitor">
+                                            <input type="text" id="tp3" class="form-control" name="email_to_report" placeholder="Email to report" value="{{data.email}}">
+                                        </div>
+                                </div>
+                                <button class="btn btn btn-primary" type="submit" name="site_protection">Protect</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="card ">
+                            <div class="card-body text-center list-icons">
+                                <h3 class="card-text mt-3 mb-3">Protecting</h3>
+                                <i class="fa fa-envelope text-primary"></i><br/>
+                                <i class="fa fa-credit-card-alt text-primary"></i>
+                                <i class="fa fa-drivers-license text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="card text-center bg-gradient-success text-white">
+                            <div class="card-body">
+                                <h3 class="card-text mt-3 mb-2">Status</h3>
+                                <h3 class="display-5 mb-4 mt-4">Active</h3>
+                                <button class="btn btn btn-primary" type="submit">Disable</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card text-center text-white">
+
+
+
+
+                                    <div class="card-body">
+                                        <h3 class="card-text mt-3 mb-3">Credits</h3>
+                                        <h3 class="display-5 mb-4 mt-5">{{user.credits}}</h3>
+                                        <span class="text-white">/</span> {{user.max_credits}}
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card text-center text-white">
+                                    <div class="card-body">
+                                        <h3 class="card-text mt-3 mb-3">Entities</h3>
+                                        <h3 class="display-5 mb-4 mt-5">{{entities}}</h3>
+                                        <span class="text-white">/</span> {{user.max_entities}}
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mt-5  ">
+                            <div class="table-responsive">
+                                <div class="table-responsive">
+                                    <table class="table card-table text-nowrap">
+                                        <tbody style="color: white;">
+                                            <tr class="border-bottom">
+                                                <th>Url</th>
+                                                <th>Next Scheduled</th>
+                                                <th>Type</th>
+                                                <th>Current Status</th>
+                                                <th>Last Seen</th>
+                                                <th>Report</th>
+                                            </tr>
+
+                                            {% for data in indexer %}
+                                            <tr class="border-bottom">
+                                                <td>
+                                                    {{data.url}}
+                                                </td>
+                                                <td>
+                                                    {{data.scheduled_scanned}}
+                                                </td>
+                                                <td><span class="text-secondary ml-2 text-orange">{{data.type}}</span></td>
+                                                <td>
+                                                    {{data.current_status}}
+                                                </td>
+                                                <td>
+                                                    {{data.last_scanned}}
+                                                </td>
+                                                <td><a href="report.php?customer_id=<?php echo $row['id']; ?>&content=tor" class="btn btn-outline-danger">Report</a></td>
+                                            </tr>
+                                            {% endfor %}
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endblock %}

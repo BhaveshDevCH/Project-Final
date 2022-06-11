@@ -1,0 +1,34 @@
+{% load static %}
+<div class="app-header header d-flex">
+
+    <div class="container-fluid">
+        <div class="d-flex">
+            <a class="header-brand" href="index.html">
+                <img src='{% static "assets/images/brand/logo1.png" %}' class="header-brand-img main-logo" alt="Hogo logo">
+            </a>
+            <!-- logo-->
+            <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+            <a href="#" data-toggle="search" class="nav-link nav-link  navsearch"><i class="fa fa-search"></i></a>
+            <!-- search icon -->
+            <div class="header-form">
+                <form class="form-inline">
+                    <div class="search-element mr-3">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <span class="Search-icon"><i class="fa fa-search"></i></span>
+                    </div>
+                </form>
+                <!-- search-bar -->
+            </div>
+            <div class="d-flex order-lg-2 ml-auto header-rightmenu">
+                <div class="dropdown">
+                    <a class="nav-link icon full-screen-link" id="fullscreen-button">
+                        <i class="fe fe-maximize-2"></i>
+                    </a>
+                </div>
+                <!-- full-screen -->
+                <!-- profile -->
+                <!-- Right-siebar-->
+            </div>
+        </div>
+    </div>
+</div>

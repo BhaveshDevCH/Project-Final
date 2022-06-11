@@ -1,0 +1,104 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block content %}
+
+        <div class="app-content  my-3 my-md-5">
+            <div class="side-app">
+                <div class="bg-white p-3 header-secondary row">
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Monitor BlockChains's Transactions</h3>
+                            </div>
+                            <div class=" card-body">
+                                <div class="d-flex">
+                                    <div class="input-group wd-150">
+                                        <div class="input-group-prepend btn btn-primary ">
+                                            <i class="fa fa-2x fa-link tx-16 lh-0 op-6"></i>
+                                        </div>
+
+                                        <!-- input-group-prepend -->
+                                        <form action="" method="get"></form>
+                                        <input class="form-control" id="tp3" placeholder="Search TxID's,Blocks,Wallet Addresses,Miners" type="text">
+                                        <button class="btn btn btn-primary " id="setTimeButton">Search</button>
+                                        </form>
+                                    </div>
+                                    <!-- input-group -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body text-center list-icons">
+                                <h3 class="card-text mt-3 mb-3">BlockChain's Monitored</h3>
+                                <i class="fa fa-cubes text-primary"></i><span class="h1">17</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body text-center list-icons">
+                                <h3 class="card-text mt-3 mb-3">Wallet's Monitored</h3>
+                                <i class="fa fa-user-secret text-primary"></i><span class="h1">4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="card mt-5  ">
+                            <div class="table-responsive">
+                                <div class="table-responsive">
+                                    <table class="table card-table text-nowrap" style="color: white;">
+                                        <tbody>
+                                            <tr class="border-bottom">
+                                                <th>Transaction Hash</th>
+                                                <th>Crypto Type</th>
+                                                <th>Transaction Status</th>
+                                                <th>Amount</th>
+                                                <th>Details</th>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <td>ae48afe5a28d43e0ec6314f9b0abed62f5528165883a10e7e38a216811af7b0b
+                                                </td>
+                                                <td><img src='{% static "assets/images/crypto-currencies/bitcoin.svg" %}' alt="Bitcoin" class="w-4 h-4"> Bitcoin</td>
+                                                <td>Confirmed</td>
+                                                <td class="">$782,219,000.00</td>
+                                                <td><a href="https://blockchair.com/bitcoin/transaction/ae48afe5a28d43e0ec6314f9b0abed62f5528165883a10e7e38a216811af7b0b" target="_blank">View</a></td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <td>0x197c80017faa0242e6b481c5dd6b6efa5b479a6d7355e80fe2fc15580f2bac78
+                                                </td>
+                                                <td><img src='{% static "assets/images/crypto-currencies/ethereum.svg" %}' alt="ethereum" class="w-4 h-4"> Ethereum</td>
+                                                <td>Confirmed</td>
+                                                <td class="">$3,569.15</td>
+                                                <td><a href="https://blockchair.com/ethereum/transaction/0x197c80017faa0242e6b481c5dd6b6efa5b479a6d7355e80fe2fc15580f2bac78" target="_blank">View</a></td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <td>0x19d78c0de00e440d872fab0899973751d0a79fd1109cd01fdcab4bed2385a24c
+                                                </td>
+                                                <td><img src='{% static "assets/images/crypto-currencies/ethereum.svg" %}' alt="ethereum" class="w-4 h-4"> Ethereum</td>
+                                                <td>Confirmed</td>
+                                                <td class="">$95.31</td>
+                                                <td><a href="https://blockchair.com/ethereum/transaction/0x19d78c0de00e440d872fab0899973751d0a79fd1109cd01fdcab4bed2385a24c" target="_blank">View</a></td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <td>ae48afe5a28d43e0ec6314f9b0abed62f5528165883a10e7e38a216811af7b0b
+                                                </td>
+                                                <td><img src='{% static "assets/images/crypto-currencies/bitcoin.svg" %}' alt="Bitcoin" class="w-4 h-4">Bitcoin</td>
+                                                <td>Confirmed</td>
+                                                <td class="">$782,219,000.00</td>
+                                                <td><a href="https://blockchair.com/bitcoin/transaction/ae48afe5a28d43e0ec6314f9b0abed62f5528165883a10e7e38a216811af7b0b" target="_blank">View</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock %}

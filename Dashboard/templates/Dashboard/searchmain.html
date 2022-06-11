@@ -1,0 +1,212 @@
+{% include "Dashboard/header.html" %} 
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+	<div class="row row-cards">
+		<div class="col-lg-12">
+			<form action="{% url 'search' %}" method="post">
+			<div class="input-group">
+				
+					{% csrf_token %}
+				<input type="text" class="form-control" name="getSearch" placeholder="">
+				<div class="input-group-append ">
+					<button type="submit" class="btn btn-primary ">
+						<i class="fa fa-search " aria-hidden="true"></i>
+					</button>
+				</div>
+			
+			</div>
+		</form>
+			<div class="card mt-5 store">
+				<div class="table-responsive">
+					{% if report %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in report %}
+						<tr>
+							<td>{{r.name}}</td>
+							<td>{{r.labels}}</td>
+							<td>{{r.description}}</td>
+							<td>{{r.published}}</td>
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					{% if malware %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in malware %}
+						<tr>
+							<td>{{r.name}}</td>
+							<td>{{r.labels}}</td>
+							<td>{{r.description}}</td>
+							<td>{{r.kill_chain_phases}}</td>
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					
+					{% if actors %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in actors %}
+						<tr>
+							<td>{{r.name}}</td>
+							<td>{{r.labels}}</td>
+							<td>{{r.description}}</td>
+							<td>{{r.aliases}}</td>
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					
+					{% if tool %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in tool %}
+						<tr>
+							<td>{{r.name}}</td>
+							<td>{{r.labels}}</td>
+							<td>{{r.description}}</td>
+							<td>{{r.kill_chain_phases}}</td>
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					{% if vun %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in vun %}
+						<tr>
+							<td>{{r.name}}</td>
+							<td>{{r.description}}</td>
+							
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					{% if domain %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in domain %}
+						<tr>
+							<td>{{r.value}}</td>
+							<td>{{r.resolves_to_refs}}</td>
+							<td>{{r.related_name}}</td>
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					{% if url %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in url %}
+						<tr>
+							<td>{{r.value}}</td>
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					{% if filehash %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in filehash %}
+						<tr>
+							<td>{{r.name}}</td>
+							<td>{{r.hashes_md5}}</td>
+							<td>{{r.hashes_sha1}}</td>
+							<td>{{r.hashes_sha256}}</td>
+
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					{% if filename %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in filename %}
+						<tr>
+							<td>{{r.name}}</td>
+							<td>{{r.hashes_md5}}</td>
+							<td>{{r.hashes_sha1}}</td>
+							<td>{{r.hashes_sha256}}</td>
+
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+
+					{% if indicator %}
+					<table class="table card-table table-vcenter text-nowrap">
+						{% for r in indicator %}
+						<tr>
+							<td>{{r.name}}</td>
+							<td>{{r.description}}</td>
+							<td>{{r.labels}}</td>
+							<td>{{r.valid_from}}</td>
+							<td>{{r.valid_until}}</td>
+
+
+							<td>
+								<div class="badge badge-danger badge-md"><a class="badge-danger" href="#">Link</a></div>
+							</td>
+					
+						</tr>
+						{% endfor %}
+						
+					</table>
+					{% endif %}
+					
+
+				</div>
+			</div>
+		</div><!-- col end -->
+	</div>
+</div>
+						
+
+{% endblock %}

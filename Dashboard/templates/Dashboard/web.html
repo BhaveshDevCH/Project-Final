@@ -1,0 +1,115 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block content %}
+
+
+<body class="app sidebar-mini rtl">
+
+    <div class="page">
+        <div class="page-main">
+
+
+            <div class="app-content  my-3 my-md-5">
+                <div class="side-app">
+                    <div class="bg-white p-3 header-secondary row">
+
+                    </div>
+                    <div class="row">
+      
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Search For Dark Web Records</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <form action="{% url 'web' %}" method="POST">
+                                        {% csrf_token %}
+                                        <div class="d-flex">
+                                            <div class="input-group wd-150">
+                                                <div class="input-group-prepend btn btn-primary ">
+                                                    <i class="fa fa-2x fa-search tx-16 lh-0 op-6"></i>
+
+                                                </div>
+
+                                                <!-- input-group-prepend -->
+                                                <input class="form-control" id="tp3" name="darkweb" value="{{searched}}" placeholder="Search Dark Web" type="text">
+                                                <input class="btn btn btn-primary " type="submit" value="Search"></input>
+                                            </div>
+                                    </form>
+                                    <!-- input-group -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card text-center">
+                                <div class="card-body text-center">
+                                    <h5 class="mb-5">Search Filters</h5>
+
+                                    <div class="btn-list text-center">
+                                        <a href="#" class="btn btn-danger">TOR</a>
+                                        <a href="#" class="btn btn-danger">I2P</a>
+                                        <a href="#" class="btn btn-danger">IP</a>
+                                        <a href="#" class="btn btn-danger">EMAIL</a>
+                                        <a href="#" class="btn btn-danger">URL</a>
+                                        <a href="#" class="btn btn-danger">Service</a>
+                                        <a href="#" class="btn btn-danger">KEYWORD</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="card mt-5  ">
+                                <div class="table-responsive">
+                                    <div class="table-responsive">
+                                        <table class="table card-table text-nowrap">
+                                            <tbody style="color: white;">
+                                                <tr class="border-bottom">
+                                                    <th>Url</th>
+                                                    <th>Indexed On</th>
+                                                    <th>Keywords</th>
+                                                    <th>Snapshots</th>
+                                                    <th>Last Seen</th>
+                                                    <th>Report</th>
+                                                </tr>
+                                                {% for data in sites %}
+
+
+                                                <tr class="border-bottom">
+                                                    <td>
+                                                        {{data.url}}
+                                                    </td>
+                                                    <td>
+                                                        {{data.date_added}}
+                                                    </td>
+                                                    <td><span class="text-secondary ml-2"><?php echo htmlspecialchars($row['keywords']); ?></span>
+                                                        <span class="text-orange ml-2">{{data.keywords}}</span>
+                                                        <!-- <span class="text-warning ml-2">ADA</span>
+                                                        <span class="text-info ml-2">XRP</span>
+                                                    </td> -->
+                                                        <td class="text-red"><img src='{{data.screenshot.url}}' alt="Bitcoin" class="w-4 h-4"></td>
+                                                        <td>
+                                                            {{data.last_seen}}
+                                                        </td>
+                                                        <td><a href="report.php?customer_id=<?php echo $row['id']; ?>&content=tor" class="btn btn-outline-danger">Report</a></td>
+                                                </tr>
+                                                {% endfor %}
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="table-footer">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- app-content end -->
+
+                        {% endblock content %}

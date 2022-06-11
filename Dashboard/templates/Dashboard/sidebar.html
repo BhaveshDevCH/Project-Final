@@ -1,0 +1,186 @@
+        <!--app-header-->
+        {% load static %}
+        {% load custom_tags %}
+        <div class="app-header header d-flex">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <a class="header-brand" href="index.html">
+                        <img src="{% static 'assets/images/brand/o1.png' %}" class="header-brand-img main-logo" alt="CyberHawkz Logo">
+                        <img src="{% static 'assets/images/brand/icn.png' %}" class="header-brand-img icon-logo" alt="CyberHawkz Logo">
+                    </a><!-- logo-->
+                    <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+                    <a href="#" data-toggle="search" class="nav-link nav-link  navsearch"><i class="fa fa-search"></i></a><!-- search icon -->
+                    <div class="header-form">
+                        <form class="form-inline" method="POST" action="{% url 'search' %}">
+                            {% csrf_token %}
+                            <div class="search-element mr-3">
+                                <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+                                <span class="Search-icon"><i class="fa fa-search"></i></span>
+                            </div>
+                        </form><!-- search-bar -->
+                    </div>
+                    
+                    <div class="d-flex order-lg-2 ml-auto header-rightmenu">
+                        <div class="dropdown">
+                            <a  class="nav-link icon full-screen-link" id="fullscreen-button">
+                                <i class="fa fa-arrows-alt"></i>
+                            </a>
+                        </div><!-- full-screen -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--app-header end-->
+
+        <!-- Sidebar menu-->
+        <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+        <aside class="app-sidebar">
+            <div class="app-sidebar__user pb-0">
+                <div class="user-body">
+                    {% if request.user.user_profile.profile_img %}
+                    <span class="avatar avatar-xxl brround text-center cover-image" data-image-src="{{request.user.user_profile.profile_img.url}}"></span>
+                    {% else %}
+                    <span class="avatar avatar-xxl brround text-center cover-image" data-image-src="{% static 'assets/images/users/female/33.png' %}"></span>
+                    {% endif %}
+                </div>
+                <div class="user-info">
+                    <a class="ml-2"><span class="text-dark app-sidebar__user-name font-weight-semibold">{{request.user.username|upper}}</span><br>
+                        <span class="text-muted app-sidebar__user-name text-sm"> {{request.user.user_profile.organization}}</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tab-menu-heading siderbar-tabs border-0 p-0">
+                <div class="tabs-menu ">
+                    <!-- Tabs -->
+                    <ul class="nav panel-tabs">
+                        <li class="{% url 'index' %}"><a href="" class="active" title="Home"><i class="fa fa-home fs-17"></i></a></li>
+                        <li><a href="{% url 'file_upload' %}" title="Upload"><i class="fa fa-upload fs-17"></i></a></li>
+                        <li><a href="{% url 'profile' %}" title="Profile"><i class="fa fa-user fs-17"></i></a></li>
+                        <li><a href="{% url 'lockScreen' %}" title="Lockscreen"><i class="fa fa-lock fs-17"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-body tabs-menu-body side-tab-body p-0 border-0 ">
+                <div class="tab-content">
+                    <div class="tab-pane active " id="index1">
+                        <div class="row row-demo-list">
+                            <div id="parentVerticalTab" class="col-md-12">
+                                <ul class="resp-tabs-list hor_1">
+                                    <li><i class="side-menu__icon fa-2x fa fa-home"></i></li>
+                                    <li class="resp-tab-active active"><i class="side-menu__icon fa-2x fa fa-crosshairs"></i></li>
+                                    <li><i class="side-menu__icon fa-2x fa fa-bug"></i></li>
+                                    <li><i class="side-menu__icon fa-2x fa fa-code"></i></li>
+                                    <li><i class="side-menu__icon fa-2x fa fa-database"></i></li>
+                                    <li><i class="side-menu__icon fa-2x fa fa-connectdevelop"></i></li>
+                                    <li><i class="side-menu__icon fa-2x fa fa-line-chart"></i></li>
+                                    <li><i class="side-menu__icon fa fa-2x fa-mortar-board"></i></li>
+                                    <li><i class="side-menu__icon fa-2x fa fa-cogs"></i></li>
+                                    <li><i class="side-menu__icon fa-2x fa fa-power-off"></i></li>
+                                </ul>
+                                <div class="resp-tabs-container hor_1">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">Home</h4>
+                                                <a class="slide-item" href="{% url 'index' %}">Dashboard</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="resp-tab-content-active">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">Monitoring</h4>
+                                                <a href="{% url 'exp' %}" class="slide-item">Monitoring</a>
+                                                <a href="{% url 'indexer' %}" class="slide-item">Indexer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">Threat Hub</h4>
+                                                <a href="{% url 'threats' %}" class="slide-item">Threat Stats</a>
+                                                <a href="{% url 'malware' %}" class="slide-item">Malwares</a>
+                                                <a href="{% url 'ioc' %}" class="slide-item">IOC's</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">Arsenal</h4>
+                                                <a href="#" class="slide-item">Intelligence Reports</a>
+                                                <a href="#" class="slide-item">Submit Report</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">Data Breaches</h4>
+                                                <a href="{% url 'web' %}" class="slide-item">Websites Breached</a>
+                                                <a href="{% url 'dbs' %}" class="slide-item">Breach Lookup</a>
+                                                <a href="{% url 'userprofile' %}" class="slide-item">User Lookup</a>
+                                                <a href="{% url 'creds' %}" class="slide-item">Credential Lookup</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">Intelligence Sharing</h4>
+                                                <a href="{% url 'view_file_upload' %}" class="slide-item">Threat Reports</a>
+                                                <a href="{% url 'file_upload' %}" class="slide-item">Upload Report</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">API Stats</h4>
+                                                <a href="{% url 'apistats' %}" class="slide-item">API Stats</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">FAQ</h4>
+                                                <a href="{% url 'faq' %}" class="slide-item">FAQ'S</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">Settings</h4>
+                                                <a href="{% url 'profile' %}" class="slide-item">Profile Settings</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="font-weight-semibold">Logout</h4>
+                                                <a href="{% url 'lockScreen' %}" class="slide-item">Lockscreen</a>
+                                                <a href="{% url 'logout' %}" class="slide-item">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div><!-- col-4 -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--sidemenu end-->
+

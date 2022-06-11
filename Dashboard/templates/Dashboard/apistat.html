@@ -1,0 +1,95 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block content %}
+
+<div class="app-content  my-3 my-md-5">
+    <div class="side-app">
+        <div class="bg-white p-3 header-secondary row">
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card service">
+                    <div class="card-body">
+                        <div class="item-box text-center">
+                            <div class="item-box-wrap">
+                                <h5 class="mb-2 font-weight-semibold">{{token}}</h5>
+                                <p class="text-default mb-0">API Token</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card service">
+                    <div class="card-body">
+                        <div class="item-box text-center">
+                            <div class="item-box-wrap">
+                                <h5 class="mb-2 font-weight-semibold">{{api_calls}}</h5>
+                                <!-- {{most_repititive}} -->
+                                <p class="text-default mb-0">API calls remaining</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+
+                    <div class="card-header">
+                        <h3 class="card-title">API Stats</h3>
+                    </div>
+
+                    <!-- input-group -->
+                </div>
+                <div class="card-body text-center">
+
+                    <div class="btn-list text-center">
+                        <a class="btn btn-danger">Success - 200</a>
+                        <a class="btn btn-danger">Invalid Token - 401</a>
+                        <a class="btn btn-danger">Invalid API Key - 403</a>
+                        <a class="btn btn-danger">Not Found - 404</a>
+                        <a class="btn btn-danger">Limit Exausted - 429</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mt-5  ">
+                    <div class="table-responsive">
+                        <div class="table-responsive">
+                            <table class="table card-table text-nowrap text-dark">
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Query</th>
+                                        <th scope="col">Timestamp</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                    {% if not api_logs %}
+                                    <tr>
+                                        <td colspan="4" style="text-align: center;">No Data Found</td>
+                                    </tr>
+                                    {% endif %}
+                                    {% for a in api_logs %}
+                                    <tr class="border-bottom">
+                                        <td>{{forloop.counter}}</td>
+                                        <td>{{a.2}}</td>
+                                        <td>{{a.1}}</td>
+                                        <td>{{a.0}}</td>
+                                    </tr>
+                                    {% endfor %}
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- app-content end -->
+        </div>
+
+
+
+        {% endblock content %}

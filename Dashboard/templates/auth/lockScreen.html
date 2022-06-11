@@ -1,0 +1,33 @@
+<html>
+{% load static %}
+
+<head>
+    <Title>Lockscreen | CyberHawkz</Title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "assets/css/login.css" %}'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form">
+        <form action="{% url 'lockScreen' %}" method="POST">
+            {% csrf_token %}
+            <h2>Lockscreen</h2>
+            <div class="input">
+                <div class="inputBox">
+                    <label for="">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="Unlock!">
+                </div>
+            </div>
+            <p class="forgot"><a href="{% url 'forgot_password'%}">Forgot Password?</a></p>
+            <p class="forgot"><a href="{% url 'login' %}">Login?</a></p>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

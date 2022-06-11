@@ -1,0 +1,62 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block content %}
+<!-- app-content-->
+<div class="app-content  my-3 my-md-5">
+	<div class="side-app">
+		<div class="bg-white p-3 header-secondary row">
+			<div class="col">
+				<div class="d-flex">
+					<a class="btn btn-danger" href="#"><i class="fe fe-rotate-cw mr-1 mt-1"></i> Upgrade </a>
+				</div>
+			</div>
+			<div class="col col-auto">
+				<a class="btn btn-light mt-4 mt-sm-0" href="#"><i class="fe fe-help-circle mr-1 mt-1"></i> Support</a>
+				<a class="btn btn-success mt-4 mt-sm-0" href="#"><i class="fe fe-plus mr-1 mt-1"></i>Indexer</a>
+			</div>
+		</div>
+
+		<!-- page-header -->
+		<div class="page-header">
+			<ol class="breadcrumb">
+				<!-- breadcrumb -->
+				<li class="breadcrumb-item">Search Results For <b>"{{query}}"</b></li>
+			</ol><!-- End breadcrumb -->
+
+		</div>
+		<!-- End page-header -->
+		<!-- row -->
+		<div class="row">
+			{% if result %}
+			{% for r in result %}
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-body">
+						<div class="abouts text-center">
+							<h4 class="font-weight-semibold">{{r.name}}</h4>
+							<p class="mb-3">Type: {{r.object_type.name}}</p>
+							<p class="mb-3">Stix Version: {{r.spec_version}}</p>
+							<p class="mb-3">Description: {{r.description|slice:":100"}}...</p>
+							{% if r.object_id.object_id %}
+							<a href="{% url 'entity' r.object_id.object_id %}" class="btn btn-outline-primary btn-pill">Details</a>
+							{% else %}
+							<a href="{% url 'entity' r.object_id %}" class="btn btn-outline-primary btn-pill">Details</a>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+			{% else %}
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-body">
+						Not Found
+					</div>
+				</div>
+			</div>
+			{% endif %}
+
+		</div>
+		<!-- row end -->
+
+
+{% endblock content %}

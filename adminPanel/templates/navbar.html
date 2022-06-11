@@ -1,0 +1,31 @@
+<div class="header">
+    <div class="pull-left">
+        <div class="logo"><a href="{% url 'admin_dashboard' %}"><span>BreachAlert Admin</span></a></div>
+        <div class="hamburger sidebar-toggle is-active">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+    <div class="pull-right p-r-15">
+        <ul>
+            <li class="header-icon dib"><img class="avatar-img" src="assets/images/avatar/1.jpg" alt="" /> <span class="user-avatar"> {{request.user.username}} <i class="ti-angle-down f-s-10"></i></span>
+                <div class="drop-down dropdown-profile">
+                    <div class="dropdown-content-body">
+                        <ul>
+                            <li><a href="#"><i class="ti-user"></i> <span>Profile</span></a></li>
+                            <li><a href="#"><i class="ti-wallet"></i> <span>My Balance</span></a></li>
+                            <li><a href="#"><i class="ti-write"></i> <span>My Task</span></a></li>
+                            <li><a href="#"><i class="ti-calendar"></i> <span>My Calender</span></a></li>
+                            <li><a href="#"><i class="ti-email"></i> <span>Inbox</span></a></li>
+                            <li><a href="#"><i class="ti-settings"></i> <span>Setting</span></a></li>
+                            <li><a href="#"><i class="ti-help-alt"></i> <span>Help</span></a></li>
+                            <li><a href="#"><i class="ti-lock"></i> <span>Lock Screen</span></a></li>
+                            <li><a href="{% url 'admin_logouthandle' %}"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

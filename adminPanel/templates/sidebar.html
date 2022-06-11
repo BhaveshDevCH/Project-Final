@@ -1,0 +1,24 @@
+<div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+    <div class="nano">
+        <div class="nano-content">
+            <ul>
+                <li class=""><a class="sidebar-sub-toggle"><i class="ti-home"></i> Home <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="{% url 'admin_dashboard' %}">Dashboard</a></li>
+                    </ul>
+                </li>
+                <li class=""><a class="sidebar-sub-toggle"><i class="ti-user"></i> Users <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <ul>
+                        <li><a href="{% url 'signin_request' %}">SignIn Request</a></li>
+                         <li><a href="{% url 'users_status' %}">Status</a></li>
+                         <li><a href="{% url 'add_user' %}">Add User</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'email_monitored' %}"><i class="ti-email"></i>Email Monitored</a></li>
+                <li><a href="{% url 'domain_monitored' %}"><i class="ti-world"></i>Domain Monitored</a></li>
+                <li><a href="{% url 'notification' %}"><i class="ti-bell"></i>Notification</a></li>
+                <li><a href="{% url 'admin_logouthandle' %}"><i class="ti-close"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,153 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block content %}
+
+
+<div class="app-content  my-3 my-md-5">
+    <div class="side-app">
+        <div class="bg-white p-3 header-secondary row">
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="">Malware's Hub</h1>
+                <h6 class="text-danger"> - <span class="fa fa-exclamation-triangle"> Malwares Ahead</span></h6>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="card ">
+                    <div class="card-body p-4 text-dark">
+                        <div class="statistics-info">
+                            <div class="row text-center">
+                                <div class="col-lg-3 col-md-6 mt-4 mb-4">
+                                    <div class="counter-status">
+                                        <span class="bg-danger-transparent icon-service text-danger mb-3">
+                                            <i class="fa fa-tasks fa-2x"></i>
+                                        </span>
+                                        <h5>Websites Analysed</h5>
+                                        <h2 class="counter text-primary mb-0">{{domain_name}}</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mt-4 mb-4">
+                                    <div class="counter-status">
+                                        <span class="bg-danger-transparent icon-service text-danger mb-3">
+                                            <i class="fa fa-bug fa-2x"></i>
+                                        </span>
+                                        <h5>IOC's Analysed</h5>
+                                        <h2 class="counter text-primary  mb-0">{{ioc}}</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mt-4 mb-4">
+                                    <div class="counter-status">
+                                        <span class="bg-danger-transparent icon-service text-danger mb-3">
+                                            <i class="fa fa-exclamation-triangle fa-2x"></i>
+                                        </span>
+                                        <h5>Malware</h5>
+                                        <h2 class="counter text-primary  mb-0">{{malware}}</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6  mt-4 mb-4">
+                                    <div class="counter-statuss">
+                                        <span class="bg-danger-transparent icon-service text-danger4 mb-3">
+                                            <i class="fa fa-user fa-2x"></i>
+                                        </span>
+                                        <h5>Threat Actors</h5>
+                                        <h2 class="counter text-primary  mb-0">{{threat_actor}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-3">
+                <div class="card service">
+                    <div class="card-body">
+                        <div class="item-box text-center">
+                            <div class=" text-center text-danger mb-4"><i class="si si-clock"></i></div>
+                            <div class="item-box-wrap">
+                                <h5 class="mb-2 font-weight-semibold">{{samplesadded}}</h5>
+                                <p class="text-default mb-0">New Malware Samples Added</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card service">
+                    <div class="card-body">
+                        <div class="item-box text-center">
+                            <div class=" text-center text-danger mb-4"><i class="si si-clock"></i></div>
+                            <div class="item-box-wrap">
+                                <h5 class="mb-2 font-weight-semibold">{{most_repetitive}}</h5>
+                                <p class="text-default mb-0">Most Active Malware</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card service">
+                    <div class="card-body">
+                        <div class="item-box text-center">
+                            <div class=" text-center text-danger mb-4"><i class="si si-clock"></i></div>
+                            <div class="item-box-wrap">
+                                <h5 class="mb-2 font-weight-semibold">{{mal_added}}</h5>
+                                <p class="text-default mb-0">Types of Malwares Added</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card service">
+                    <div class="card-body">
+                        <div class="item-box text-center">
+                            <div class=" text-center text-danger mb-4"><i class="si si-clock"></i></div>
+                            <div class="item-box-wrap">
+                                <h5 class="mb-2 font-weight-semibold">{{totalcount}}</h5>
+                                <p class="text-default mb-0">Malware Samples in Database</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-lg-12 ">
+                <div class="row">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <div class="latest-timeline">
+                                <ul class="timeline mb-0">
+                                    {% for b in blog%}
+                                    <li class="mt-0">
+                                        <a target="_blank" href="#"
+                                            class="font-weight-semibold text-default fs-17">{{b.title}}</a>
+                                        <a href="#" class="float-right">{{b.time}}</a>
+                                        <p class="text-muted">{{b.link}}</p>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- app-content end -->
+
+
+
+
+
+            {% endblock content %}

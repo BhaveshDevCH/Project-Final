@@ -1,0 +1,119 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% load custom_tags %}{% block content %}
+
+<body class="app sidebar-mini rtl">
+
+
+
+    <div class="page">
+        <div class="page-main">
+            <div class="app-content  my-3 my-md-5">
+                <div class="side-app">
+                    <div class="bg-white p-3 header-secondary row">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <form action="{% url 'threat_actor' %}" method="POST">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Threat Actor Database</h3>
+                                    </div>
+                                    <div class=" card-body">
+                                        <div class="d-flex">
+                                            <div class="input-group wd-150">
+                                                <div class="input-group-prepend btn btn-danger ">
+                                                    <i class="fa fa-2x fa-link tx-16 lh-0 op-6"></i>
+
+                                                </div>
+                                                <!-- input-group-prepend -->
+
+                                                {% csrf_token %}
+                                                <input class="form-control" id="tp3"
+                                                    placeholder="Search Threat Actors" type="text"
+                                                    name="threat_actor_search">
+                                                <button type="submit" class="btn btn btn-danger "
+                                                    id="setTimeButton">Search</button>
+                                </form>
+                            </div>
+
+                            <!-- input-group -->
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="mb-5">Search Filters</h5>
+
+                            <div class="btn-list text-center">
+                                <a href="#" class="btn btn-danger">TOR</a>
+                                <a href="#" class="btn btn-danger">I2P</a>
+                                <a href="#" class="btn btn-danger">IP</a>
+                                <a href="#" class="btn btn-danger">EMAIL</a>
+                                <a href="#" class="btn btn-danger">URL</a>
+                                <a href="#" class="btn btn-danger">Service</a>
+                                <a href="#" class="btn btn-danger">KEYWORD</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mt-5  ">
+                    <div class="table-responsive">
+                        <div class="table-responsive">
+
+                            <table class="table card-table text-nowrap text-dark">
+
+                                <tbody>
+
+                                    <tr class="border-bottom">
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Labels</th>
+                                        <th>Alias</th>
+                                        <th></th>
+                                    </tr>
+                                    {% if not threat_actor_data %}
+                                    <tr>
+                                        <td colspan="5" style="text-align: center;">No Data Found</td>
+                                    </tr>
+                                    {%endif%}
+                                    {% for threat_actor in threat_actor_data %}
+                                    <tr class="border-bottom">
+                                        <td>{{threat_actor.name}}</td>
+                                        <td>{{threat_actor.description}}</td>
+                                        <td>
+                                            {% for l in threat_actor.labels.all %}
+                                            <span class="tag tag-blue mx-2">{{l}}</span>
+                                            {% endfor %}
+                                        </td>
+                                        <td>
+                                            {% for l in threat_actor.aliases.all %}
+                                            <span class="tag tag-red mx-2">{{l}}</span>
+                                            {% endfor %}
+                                        </td>
+
+                                        <td><a href="#" class="btn btn-outline-danger">Click</a></td>
+                                    </tr>
+                                    {% endfor %}
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="table-footer">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- app-content end -->
+        </div>
+    </div>
+</body>
+
+
+
+{% endblock content %}

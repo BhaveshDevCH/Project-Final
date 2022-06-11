@@ -1,0 +1,95 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block title %} Credentials {% endblock title %} {% block content %}
+
+        <div class="app-content  my-3 my-md-5">
+            <div class="side-app">
+                <div class="bg-white p-3 header-secondary row">
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Search For Credential Exposures</h3>
+                            </div>
+                            <div class=" card-body">
+                                <form action="{% url 'creds' %}" method="POST">
+                                    {% csrf_token %}
+                                    <div class="d-flex">
+                                        <div class="input-group wd-150">
+                                            <div class="input-group-prepend btn btn-primary ">
+                                                <i class="fa fa-2x fa-envelope-o tx-16 lh-0 op-6"></i>
+
+                                            </div>
+                                            <!-- input-group-prepend -->
+                                            <input class="form-control" id="tp3" value="" placeholder="Search Email's,Keywords,Names etc" type="text" id="cred_search" name="cred_search">
+                                            <button class="btn btn btn-primary " id="setTimeButton">Search</button>
+                                        </div>
+                                        <!-- input-group -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">User Profiling</h3>
+                            </div>
+                            <div class=" card-body">
+                                <form action="{% url 'userprofile' %}" method="POST">
+                                    {% csrf_token %}
+                                <div class="d-flex">
+                                    <div class="input-group wd-150">
+                                        <div class="input-group-prepend btn btn-primary ">
+                                            <i class="fa fa-2x fa-user tx-16 lh-0 op-6"></i>
+
+                                        </div>
+                                        <!-- input-group-prepend -->
+                                        <input class="form-control" id="tp3" placeholder="Search Url's,Keywords,Names etc" type="text">
+                                        <button class="btn btn btn-primary " id="setTimeButton">Search</button>
+                                    </div>
+                                    <!-- input-group -->
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="card mt-5  ">
+                            <div class="table-responsive">
+                                <div class="table-responsive">
+                                    <table class="table card-table text-nowrap">
+                                        <tbody style="color: white;">
+                                            <tr class="border-bottom">
+                                                <th>Email</th>
+                                                <th>Password</th>
+                                                <th>Found on Date</th>
+                                                <th>Found on URL</th>
+                                            </tr>
+                                            
+                                            {% if not search_list %}
+                                            <tr><td colspan="4" style="text-align: center;">No Data Found</td></tr>
+                                            {%endif%}
+                                            {% for s in search_list %}
+                                            <tr class="border-bottom">
+                                                <td>{{s.email}}</td>
+                                                <td>{{s.password}}</td>
+                                                <td>{{s.date}}</td>
+                                                <td class="text-red">{{s.source}} </td>
+                                            </tr>
+                                            {% endfor %}
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {% endblock %}

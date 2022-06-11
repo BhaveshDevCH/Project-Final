@@ -1,0 +1,118 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block content %}
+<div class="app-content  my-3 my-md-5">
+	<div class="side-app">
+		<div class="bg-white p-3 header-secondary row">
+			<div class="col">
+				<div class="d-flex">
+
+					<a class="btn btn-danger" href="#"><i class="fe fe-rotate-cw mr-1 mt-1"></i> Upgrade </a>
+				</div>
+			</div>
+			<div class="col col-auto">
+				<a class="btn btn-light mt-4 mt-sm-0" href="#"><i class="fe fe-help-circle mr-1 mt-1"></i> Support</a>
+				<a class="btn btn-success mt-4 mt-sm-0" href="#"><i class="fe fe-plus mr-1 mt-1"></i> Indexer</a>
+			</div>
+		</div>
+
+		<!-- page-header -->
+		<div class="page-header">
+			<ol class="breadcrumb">
+				<!-- breadcrumb -->
+				<li class="breadcrumb-item"><a href="#">Advanced UI</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Search</li>
+			</ol><!-- End breadcrumb -->
+
+		</div>
+		<!-- End page-header -->
+
+		<!-- row -->
+		<form action="" method="POST">
+			{% csrf_token %}
+			<div class="row row-cards">
+				<div class="col-lg-3">
+					<div class="row">
+						<!-- row -->
+						<div class="col-md-12 col-lg-12">
+							<div class="card">
+								<div class="card-header">
+									<h4>Categories</h4>
+								</div>
+								<div class="card-body">
+									<div class="search-radio mb-3">
+										<div class="radio">
+											<input type="radio" value="ipv4" name="category">
+											<label>IPv4</label>
+										</div>
+										<div class="radio">
+											<input type="radio" value="domain" name="category">
+											<label>Domains</label>
+										</div>
+										<div class="radio">
+											<input type="radio" value="files" name="category">
+											<label>Files</label>
+										</div>
+										<div class="radio">
+											<input type="radio" value="observables" name="category">
+											<label class="mb-0">Observables</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div><!-- row end -->
+				</div><!-- col end -->
+				<div class="col-lg-9">
+					<div class="input-group">
+						<input type="text" class="form-control " name="search_data" value="{{searched}}" placeholder="">
+						<div class="input-group-append ">
+							<button type="submit" class="btn btn-primary ">
+								<i class="fa fa-search " aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+					<div class="card mt-5 store">
+						<div class="table-responsive">
+							<table class="table card-table table-vcenter text-nowrap text-dark">
+								{% if data %}
+								{% for d in data %}
+								<tr>
+									<td>{{d.id}}</td>
+									<td>stix-version-2.1</td>
+									<td>TYPE:{{d.type}}</td>
+									<td>
+										{% if d.type|lower == 'file' %}
+										<strong>{{d.name}}</strong>
+										{% else %}
+										<strong>{{d.value}}</strong>
+										{% endif %}
+									</td>
+									<td>
+										<div class="badge badge-danger badge-md"><a class="badge-danger"
+												href="#">Link</a>
+										</div>
+									</td>
+
+								</tr>
+								{% endfor %}
+
+								{% else %}
+								<tr>
+									<td class="text-center">Not Found</td>
+								</tr>
+
+								{% endif %}
+
+
+							</table>
+						</div>
+					</div>
+				</div><!-- col end -->
+			</div>
+		</form>
+		<!-- row end -->
+
+
+
+
+{% endblock content %}

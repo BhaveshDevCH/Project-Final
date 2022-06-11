@@ -1,0 +1,24 @@
+{% extends "Dashboard/base.html" %} {% block title %} Error {{status}} {% endblock title %} {% load static %} {% block body %}
+<div class="default-header error-page">
+    <div class="custom-width">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="header-text">
+                    {% for message in messages %} {% if message.tags == 'error' %}
+                    <h2>{{msg}}<br> <span class="green-color">Error {{status}}</span></h2>
+                    <br>
+                    <p>{{message}}</p>
+                    {% endif %} {% endfor %}
+                </div>
+                <div class="buttons">
+                    {% if request.user.is_authenticated %}
+                    <a href="{% url 'dashboard' %}" class="btn btn-green btn-large">Dasboard</a> {% else %}
+                    <a href="{% url 'login' %}" class="btn btn-green btn-large">Login Page</a> {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Default Page Header ends here -->
+
+{% endblock body %}

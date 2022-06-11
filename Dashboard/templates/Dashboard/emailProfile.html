@@ -1,0 +1,131 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+{% block content %}
+
+
+            <div class="app-content  my-3 my-md-5">
+                <div class="side-app">
+                    <div class="bg-white p-3 header-secondary row">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Search For Digital Presence</h3>
+                                </div>
+                                <div class=" card-body">
+                                    <form action="{% url 'emailProfile' %}" method="post">
+                                        {% csrf_token %}
+                                        <input class="form-control mb-2" id="email" name="email" value="" placeholder="Enter Domain"
+                                            type="text">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                .com
+                                                <div class="material-switch pull-right">
+                                                    <input id="com" name="com" type="checkbox" value="com">
+                                                    <label for="com" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .net
+                                                <div class="material-switch pull-right">
+                                                    <input id="net" name="net" type="checkbox" value="net">
+                                                    <label for="net" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .org
+                                                <div class="material-switch pull-right">
+                                                    <input id="org" name="org" type="checkbox" value="org">
+                                                    <label for="org" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .de
+                                                <div class="material-switch pull-right">
+                                                    <input id="de" name="de" type="checkbox" value="de">
+                                                    <label for="de" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .ru
+                                                <div class="material-switch pull-right">
+                                                    <input id="ru" name="ru" type="checkbox" value="ru">
+                                                    <label for="ru" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .us
+                                                <div class="material-switch pull-right">
+                                                    <input id="us" name="us" type="checkbox" value="us">
+                                                    <label for="us" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .info
+                                                <div class="material-switch pull-right">
+                                                    <input id="info" name="info" type="checkbox" value="info">
+                                                    <label for="info" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .cc
+                                                <div class="material-switch pull-right">
+                                                    <input id="cc" name="cc" type="checkbox" value="cc">
+                                                    <label for="cc" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .tk
+                                                <div class="material-switch pull-right">
+                                                    <input id="tk" name="tk" type="checkbox" value="tk">
+                                                    <label for="tk" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                .other
+                                                <div class="material-switch pull-right">
+                                                    <input id="other" name="other" type="checkbox" value="other">
+                                                    <label for="other" class="label-danger"></label>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                        <div class="text-center mt-2">
+                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h2> Email Found</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            {% for data in result %}
+                            {% for i in data %}
+                            <div class="col-sm-12 col-lg-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex clearfix">
+                                            <div class="mt-3">
+                                                <h5 class="mb-0 text-dark mainvalue" style="word-wrap: break-word;">{{i}}</h5>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {% endfor %}
+                        </div>
+
+
+
+
+{% endblock content %}

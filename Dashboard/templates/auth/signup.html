@@ -1,0 +1,48 @@
+<html>
+{% load static %}
+
+<head>
+    <Title>Login | CyberHawkz</Title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "assets/css/login.css" %}'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="form">
+
+
+        <h2>Login</h2>
+        <form action="" method="POST">
+            {% csrf_token %} {% for message in messages %} {{message}} {% endfor %}
+            <div class="input">
+                <div class="inputBox">
+                    <label for="">Username</label>
+                    <input type="text" name="username">
+                </div>
+                <div class="inputBox">
+                    <label for="">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="inputBox">
+                    <label for="">Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="inputBox">
+                    <label for="">Confirm-Password</label>
+                    <input type="password" name="confirm_password">
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Register">
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

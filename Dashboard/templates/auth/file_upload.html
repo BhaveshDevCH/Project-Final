@@ -1,0 +1,43 @@
+<html>
+{% load static %}
+
+<head>
+    <Title>Login | CyberHawkz</Title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "assets/css/login.css" %}'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="form">
+
+
+        <h2>File Upload</h2>
+        <form action="{% url 'file_upload' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for message in messages %} {% if message.tags == 'success' %}
+            <p style="color: #fff;">{{message}}</p>
+            {% endif %} {% endfor %}
+            <div class="input">
+                
+                <div class="inputBox">
+                    <label for="">File</label>
+                    <input type="file" name="file" id="file">
+                </div>
+
+                <div class="inputBox">
+                    <input type="submit" value="Upload">
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>

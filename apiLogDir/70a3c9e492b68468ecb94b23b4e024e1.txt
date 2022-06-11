@@ -1,0 +1,26 @@
+401,2022-06-08 16:03:03.633737,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 16:04:47.333759,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 16:05:54.866473,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 17:24:25.960076,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 17:30:47.593056,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+429,2022-06-08 17:41:33.872794,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+404,2022-06-08 17:44:27.255741,identity:Disco Team,127.0.0.1
+404,2022-06-08 17:44:27.823844,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+404,2022-06-08 17:48:28.684016,identity:Disco Team,127.0.0.1
+200,2022-06-08 17:48:29.221826,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+200,2022-06-08 17:51:21.585782,identity:Disco Team,127.0.0.1
+200,2022-06-08 17:51:22.322387,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+200,2022-06-08 18:00:41.977813,domain:example.com,127.0.0.1
+200,2022-06-08 18:00:42.626190,identity:Disco Team,127.0.0.1
+200,2022-06-08 18:00:43.239247,malware:BANGAT,127.0.0.1
+200,2022-06-08 18:00:44.001864,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+200,2022-06-08 18:00:44.767792,threat-actor:Communist Party of China,127.0.0.1
+200,2022-06-08 18:00:45.603246,tool:fgdump,127.0.0.1
+200,2022-06-08 18:00:46.357684,vulnerability:CVE-2016-1234,127.0.0.1
+200,2022-06-08 18:02:29.454731,domain:example.com,127.0.0.1
+200,2022-06-08 18:02:30.074620,identity:Disco Team,127.0.0.1
+200,2022-06-08 18:02:30.621108,malware:BANGAT,127.0.0.1
+200,2022-06-08 18:02:31.243966,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+200,2022-06-08 18:02:31.887352,threat-actor:Communist Party of China,127.0.0.1
+200,2022-06-08 18:02:32.458013,tool:fgdump,127.0.0.1
+200,2022-06-08 18:02:33.090667,vulnerability:CVE-2016-1234,127.0.0.1

@@ -1,0 +1,1 @@
+cloud_sql_proxy_x64.exe -instances="coral-heuristic-340607:us-central1:garud"=tcp:5439

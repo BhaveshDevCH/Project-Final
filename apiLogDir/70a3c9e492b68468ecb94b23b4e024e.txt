@@ -1,0 +1,15 @@
+401,2022-06-07 23:35:18.531461,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:36:23.719987,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:36:57.074003,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:41:22.408791,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:52:04.588737,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 17:48:29.251979,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 17:51:21.633963,identity:Disco Team,127.0.0.1
+401,2022-06-08 17:51:22.376789,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 18:02:29.472705,domain:example.com,127.0.0.1
+401,2022-06-08 18:02:30.096495,identity:Disco Team,127.0.0.1
+401,2022-06-08 18:02:30.656765,malware:BANGAT,127.0.0.1
+401,2022-06-08 18:02:31.264994,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 18:02:31.917725,threat-actor:Communist Party of China,127.0.0.1
+401,2022-06-08 18:02:32.480243,tool:fgdump,127.0.0.1
+401,2022-06-08 18:02:33.103723,vulnerability:CVE-2016-1234,127.0.0.1

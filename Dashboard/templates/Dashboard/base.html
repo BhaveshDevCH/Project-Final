@@ -1,0 +1,23 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+
+   
+
+    <!-- Added from header.html    -->
+    {% include "Dashboard/header.html" %}
+   
+
+	<body class="app sidebar-mini rtl">
+
+		<div class="page">
+			<div class="page-main">
+     {% include "Dashboard/sidebar.html" %}
+    {% block content %} {% endblock content %}
+
+
+    {% include "Dashboard/footer.html" %}
+</body>
+
+
+</html>

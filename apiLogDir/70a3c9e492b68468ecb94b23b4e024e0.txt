@@ -1,0 +1,35 @@
+200,2022-04-09 00:25:51.742003,malware:AURIGA,127.0.0.1
+200,2022-04-09 00:26:09.289713,malware:AURIGA,127.0.0.1
+404,2022-04-09 00:26:13.201110,malware:abc,127.0.0.1
+404,2022-04-09 00:29:49.615455,malware:abc,127.0.0.1
+404,2022-04-09 00:46:28.962131,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+200,2022-04-09 00:48:12.674028,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+404,2022-04-09 00:49:01.350645,tool:fs,127.0.0.1
+200,2022-04-09 00:49:16.581493,tool:fgdump,127.0.0.1
+401,2022-04-09 00:49:16.582502,tool:fgdump,127.0.0.1
+200,2022-04-09 00:49:38.546394,tool:fgdump,127.0.0.1
+401,2022-04-09 00:49:38.547372,tool:fgdump,127.0.0.1
+200,2022-04-09 00:50:02.379034,tool:fgdump,127.0.0.1
+401,2022-04-09 00:50:02.380547,tool:fgdump,127.0.0.1
+200,2022-04-09 00:52:09.875762,tool:fgdump,127.0.0.1
+200,2022-04-09 00:53:02.835923,tool:fgdump,127.0.0.1
+200,2022-05-07 23:56:33.142541,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+200,2022-06-07 22:49:52.054491,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+200,2022-06-07 22:50:08.734413,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:25:21.060038,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:35:18.524457,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:36:23.713985,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:41:58.717475,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:42:35.218277,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:43:52.006036,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:45:14.443801,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+200,2022-06-07 23:45:24.499443,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:46:24.306747,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-07 23:50:24.359058,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 00:03:17.700089,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 15:39:43.202886,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 15:40:32.003387,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 15:59:54.353113,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 17:25:00.384321,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 17:27:06.567984,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1
+401,2022-06-08 17:28:03.608870,report:APT1: Exposing One of China's Cyber Espionage Units,127.0.0.1

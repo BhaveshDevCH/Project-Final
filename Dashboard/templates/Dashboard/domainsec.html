@@ -1,0 +1,279 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block content %}
+
+
+
+<div class="app-content  my-3 my-md-5">
+    
+    <div class="side-app">
+        <div class="bg-white p-3 header-secondary row">
+
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Monitor Your Domain's Security</h3>
+                    </div>
+                    <div class=" card-body">
+                        <div class="d-flex">
+                            <div class="input-group wd-150">
+                                <div class="input-group-prepend btn btn-danger ">
+                                    <i class="fa fa-2x fa-link tx-16 lh-0 op-6"></i>
+
+                                </div>
+                                <!-- input-group-prepend -->
+                                <input class="form-control" id="tp3" placeholder="Search Domain Name" type="text">
+                                <button class="btn btn btn-danger " id="setTimeButton">Search</button>
+                            </div>
+                            <!-- input-group -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-body text-center list-icons">
+                        <h3 class="card-text mt-3 mb-3">Domain's Monitored</h3>
+                        <i class="si si-link text-primary"></i><span class="h1">3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Domain Information</h4>
+                    </div>
+                    <div class="card-body myTab">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active show" id="bsc" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="false">Basic Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="own" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Owner Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="oth" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="true">Other Info</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content border p-3" id="myTabContent">
+                            <div class="tab-pane fade p-0 active show" id="home" role="tabpanel" aria-labelledby="bsc">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        Domain
+                                        <span class="badgetext badge badge-default badge-pill">www.CyberHawkz.com</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Registrar
+                                        <span class="badgetext badge badge-default badge-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Registered On
+                                        <span class="badgetext badge badge-default badge-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Expires On
+                                        <span class="badgetext badge badge-default badge-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Updated On
+                                        <span class="badgetext badge badge-default badge-pill">1</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade p-0" id="profile" role="tabpanel" aria-labelledby="own">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        Owner Name
+                                        <span class="badgetext badge badge-default badge-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Organisation
+                                        <span class=" badgetext badge badge-default badge-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Phone
+                                        <span class=" badgetext badge badge-default badge-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Address
+                                        <span class=" badgetext badge badge-default badge-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        City
+                                        <span class=" badgetext badge badge-default badge-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Country
+                                        <span class=" badgetext badge badge-default badge-pill">1</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade p-0" id="contact" role="tabpanel" aria-labelledby="oth">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        Registrar WHOIS Server
+                                        <span class="badgetext badge badge-default badge-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Registrar URL
+                                        <span class=" badgetext badge badge-default badge-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Registrar IANA ID:
+                                        <span class=" badgetext badge badge-default badge-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Registrar Abuse Contact Email
+                                        <span class=" badgetext badge badge-default badge-pill">2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Domain Protection</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body">
+                            <div class="dimmer active">
+                                <div class="spinner2">
+                                    <div class="cube1"></div>
+                                    <div class="cube2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                www.cyberhawkz.rf.com
+                            </li>
+                            <li class="list-group-item">
+                                www.cyber-hawk.com
+                            </li>
+                            <li class="list-group-item">
+                                www.cyberhawkz.co.uk
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Server Information</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                IP
+                                <span class="badgetext badge badge-default badge-pill">www.CyberHawkz.com</span>
+                            </li>
+                            <li class="list-group-item">
+                                Company
+                                <span class="badgetext badge badge-default badge-pill">2</span>
+                            </li>
+                            <li class="list-group-item">
+                                Server Type
+                                <span class="badgetext badge badge-default badge-pill">1</span>
+                            </li>
+                            <li class="list-group-item">
+                                DNS
+                                <span class="badgetext badge badge-default badge-pill">1</span>
+                            </li>
+                            <li class="list-group-item">
+                                MX Server
+                                <span class="badgetext badge badge-default badge-pill">1</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">IP Geolocation</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                IP Address Organization Domain
+                            </li>
+                            <li class="list-group-item">
+                                Country Code
+                            </li>
+                            <li class="list-group-item">
+                                Location
+                            </li>
+                            <li class="list-group-item">
+                                Network
+                            </li>
+                            <li class="list-group-item">
+                                Postal Code
+                            </li>
+                            <li class="list-group-item">
+                                Approximate Coordinates*
+                            </li>
+                            <li class="list-group-item">
+                                ISP
+                            </li>
+                            <li class="list-group-item">
+                                www
+                            </li>
+                            <li class="list-group-item">
+                                www
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">IP Reputation</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                IP ADDR HERE
+                            </li>
+                            <li class="list-group-item">
+                                Spam Reports : 5
+                            </li>
+                            <li class="list-group-item">
+                                BlackLists : 6
+                            </li>
+                            <li class="list-group-item">
+                                TOR Node : False
+                            </li>
+                            <li class="list-group-item">
+                                Threat Report : Malware Host
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- app-content end -->
+
+
+
+        {% endblock content %}

@@ -1,0 +1,2827 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 58, in index
+    file = open("../temp/logging.txt", "a")  # append mode
+FileNotFoundError: [Errno 2] No such file or directory: '../temp/logging.txt'
+"GET / HTTP/1.1" 500 81568
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 58, in index
+    file = open("../temp/logging.txt", "a")  # append mode
+FileNotFoundError: [Errno 2] No such file or directory: '../temp/logging.txt'
+"GET / HTTP/1.1" 500 81568
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 1471
+"GET /static/assets/css/login.css HTTP/1.1" 200 2729
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8358
+"POST /login/?next=/ HTTP/1.1" 302 0
+Forbidden (CSRF token missing or incorrect.): /login/
+"POST /login/?next=/ HTTP/1.1" 403 2519
+"GET /login/?next=/ HTTP/1.1" 200 1471
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 58, in index
+    file = open("../temp/logging.txt", "a")  # append mode
+FileNotFoundError: [Errno 2] No such file or directory: '../temp/logging.txt'
+- Broken pipe from ('127.0.0.1', 3105)
+
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1471
+Internal Server Error: /lockScreen/
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\sessions\backends\base.py", line 233, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\base\base.py", line 219, in ensure_connection
+    self.connect()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\base\base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\MySQLdb\__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to MySQL server on '184.168.112.45' (10060)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 488, in lockScreen
+    username= request.session['username']
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\sessions\backends\base.py", line 65, in __getitem__
+    return self._session[key]
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\sessions\backends\base.py", line 238, in _get_session
+    self._session_cache = self.load()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\models\query.py", line 431, in get
+    num = len(clone)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\models\sql\compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\base\base.py", line 259, in cursor
+    return self._cursor()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\base\base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\base\base.py", line 219, in ensure_connection
+    self.connect()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\base\base.py", line 219, in ensure_connection
+    self.connect()
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\base\base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\MySQLdb\__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to MySQL server on '184.168.112.45' (10060)")
+- Broken pipe from ('127.0.0.1', 3077)
+
+"POST /login/?next=/ HTTP/1.1" 302 0
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 58, in index
+    file = open("../temp/logging.txt", "a")  # append mode
+FileNotFoundError: [Errno 2] No such file or directory: '../temp/logging.txt'
+"GET / HTTP/1.1" 500 81577
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 58, in index
+    file = open("..\temp\logging.txt", "a")  # append mode
+OSError: [Errno 22] Invalid argument: '..\temp\\logging.txt'
+"GET / HTTP/1.1" 500 81488
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /static/logging.txt HTTP/1.1" 200 0
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 63, in index
+    with open("/static/logging.txt", "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logging.txt'
+"GET / HTTP/1.1" 500 81499
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 63, in index
+    with open("/static/logging.txt", "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logging.txt'
+- Broken pipe from ('127.0.0.1', 3281)
+
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 59, in index
+    with open("../static/logging.txt", "a") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../static/logging.txt'
+"GET / HTTP/1.1" 500 81592
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 43080
+"GET /static/css/base.css HTTP/1.1" 200 22
+"GET /static/assets/plugins/scroll-bar/jquery.mCustomScrollbar.css HTTP/1.1" 200 53856
+"GET /static/assets/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140891
+"GET /static/assets/plugins/toggle-sidebar/dark-sidemenu.css HTTP/1.1" 200 20218
+"GET /static/assets/plugins/accordion1/css/dark-easy-responsive-tabs.css HTTP/1.1" 200 3493
+"GET /static/assets/plugins/owl-carousel/owl.carousel.css HTTP/1.1" 200 4731
+"GET /static/assets/css/style.css HTTP/1.1" 200 573147
+"GET /static/assets/fonts/fonts/font-awesome.min.css HTTP/1.1" 200 31004
+"GET /static/assets/plugins/iconfonts/plugin.css HTTP/1.1" 200 175485
+"GET /static/assets/plugins/datatable/dataTables.bootstrap4.min.css HTTP/1.1" 200 5186
+"GET /static/assets/plugins/iconfonts/icons.css HTTP/1.1" 200 261394
+"GET /static/assets/plugins/datatable/responsivebootstrap4.min.css HTTP/1.1" 200 3946
+"GET /static/assets/js/vendors/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+"GET /static/assets/plugins/bootstrap/popper.min.js HTTP/1.1" 200 20337
+"GET /static/assets/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 51039
+"GET /static/assets/js/vendors/jquery.sparkline.min.js HTTP/1.1" 200 43149
+"GET /static/assets/plugins/rating/jquery.rating-stars.js HTTP/1.1" 200 4233
+"GET /static/assets/plugins/moment/moment.min.js HTTP/1.1" 200 51638
+"GET /static/assets/plugins/toggle-sidebar/sidemenu.js HTTP/1.1" 200 891
+"GET /static/assets/plugins/accordion1/js/easyResponsiveTabs.js HTTP/1.1" 200 10288
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/js/accordiation.js HTTP/1.1" 200 1543
+"GET /static/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js HTTP/1.1" 200 45479
+"GET /static/assets/plugins/owl-carousel/owl-main.js HTTP/1.1" 200 1029
+"GET /static/assets/plugins/owl-carousel/owl.carousel.js HTTP/1.1" 200 89992
+"GET /static/assets/plugins/sidebar/sidebar.js HTTP/1.1" 200 3614
+"GET /static/assets/plugins/chart/utils.js HTTP/1.1" 200 3317
+"GET /static/assets/plugins/chart/chart.bundle-dark.js HTTP/1.1" 200 398188
+"GET /static/assets/plugins/counters/jquery.missofis-countdown.js HTTP/1.1" 200 7750
+"GET /static/assets/js/index1.js HTTP/1.1" 200 3464
+"GET /static/assets/plugins/counters/counter.js HTTP/1.1" 200 1375
+"GET /static/assets/images/brand/logo1.png HTTP/1.1" 200 4350
+"GET /static/assets/js/custom.js HTTP/1.1" 200 7098
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/fonts/feather/feather-webfont.woff?t=1501841394106 HTTP/1.1" 200 28984
+"GET /static/assets/fonts/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+"GET /images/profile/Chinmay_2.jpg HTTP/1.1" 200 80902
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 59, in index
+    file = open("/static/logging.txt", "a")  # append mode
+FileNotFoundError: [Errno 2] No such file or directory: '/static/logging.txt'
+"GET / HTTP/1.1" 500 81612
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\utils.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 59, in index
+    file.write(request.user.username+"-"+client_ip(request)+"-"+request.user.time)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\utils\functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'time'
+"GET / HTTP/1.1" 500 85645
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 59, in index
+    file.write(request.user.username+"-"+client_ip(request)+"-"+request.user.last_login)
+TypeError: can only concatenate str (not "datetime.datetime") to str
+"GET / HTTP/1.1" 500 81841
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /lockScreen/ HTTP/1.1" 200 1110
+"POST /lockScreen/ HTTP/1.1" 302 0
+"GET /lockScreen/ HTTP/1.1" 200 1110
+"POST /lockScreen/ HTTP/1.1" 302 0
+"GET /lockScreen/ HTTP/1.1" 200 1110
+"POST /lockScreen/ HTTP/1.1" 302 0
+"GET /lockScreen/ HTTP/1.1" 200 1110
+"GET /login/ HTTP/1.1" 200 1471
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 1471
+"POST /login/?next=/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/toggle-sidebar/dark-sidemenu.css HTTP/1.1" 304 0
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /lockScreen/ HTTP/1.1" 200 1110
+"POST /lockScreen/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2368
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8358
+- Broken pipe from ('127.0.0.1', 1134)
+
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12519
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10706
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/Dashboard/dumps_scanned/6/change/ HTTP/1.1" 200 13801
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+- Broken pipe from ('127.0.0.1', 1135)
+
+"POST /admin/Dashboard/dumps_scanned/6/change/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10921
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 7, in wrapper_function
+    if request.session['permission']==False:
+  File "E:\CyberHawkz\venvCyber\lib\site-packages\django\contrib\sessions\backends\base.py", line 65, in __getitem__
+    return self._session[key]
+KeyError: 'permission'
+"GET / HTTP/1.1" 500 76442
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /domain/
+"POST /domain/ HTTP/1.1" 404 8347
+Session data corrupted
+"GET /admin/ HTTP/1.1" 302 0
+Session data corrupted
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+Session data corrupted
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12535
+"GET /admin/logout/ HTTP/1.1" 200 1529
+Watching for file changes with StatReloader
+Session data corrupted
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 302 0
+Session data corrupted
+"GET /admin/login/?next=/admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 2262
+Session data corrupted
+"POST /admin/login/?next=/admin/Dashboard/dumps_scanned/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10706
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\cyber\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 1471
+"GET /Mini HTTP/1.1" 301 0
+"GET /Mini/ HTTP/1.1" 200 17
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 17085
+"GET /static/css/base.css HTTP/1.1" 304 0
+"GET /static/assets/plugins/accordion1/css/dark-easy-responsive-tabs.css HTTP/1.1" 304 0
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /Mini/ HTTP/1.1" 200 17085
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /Mini/ HTTP/1.1" 200 17085
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 17085
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /Mini/ HTTP/1.1" 200 17085
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /Mini/ HTTP/1.1" 200 17085
+"GET /static/assets/plugins/scroll-bar/jquery.mCustomScrollbar.css HTTP/1.1" 200 53856
+"GET /static/css/base.css HTTP/1.1" 200 22
+"GET /static/assets/plugins/toggle-sidebar/dark-sidemenu.css HTTP/1.1" 200 20218
+"GET /static/assets/plugins/owl-carousel/owl.carousel.css HTTP/1.1" 200 4731
+"GET /static/assets/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140891
+"GET /static/assets/fonts/fonts/font-awesome.min.css HTTP/1.1" 200 31004
+"GET /static/assets/plugins/iconfonts/icons.css HTTP/1.1" 200 261394
+"GET /static/assets/plugins/iconfonts/plugin.css HTTP/1.1" 200 175485
+"GET /static/assets/plugins/datatable/dataTables.bootstrap4.min.css HTTP/1.1" 200 5186
+"GET /static/assets/plugins/bootstrap/popper.min.js HTTP/1.1" 200 20337
+"GET /static/assets/css/style.css HTTP/1.1" 200 573147
+"GET /static/assets/plugins/datatable/responsivebootstrap4.min.css HTTP/1.1" 200 3946
+"GET /static/assets/js/vendors/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/rating/jquery.rating-stars.js HTTP/1.1" 200 4233
+"GET /static/assets/plugins/accordion1/css/dark-easy-responsive-tabs.css HTTP/1.1" 200 3493
+"GET /static/assets/js/accordiation.js HTTP/1.1" 200 1543
+"GET /static/assets/plugins/moment/moment.min.js HTTP/1.1" 200 51638
+"GET /static/assets/plugins/accordion1/js/easyResponsiveTabs.js HTTP/1.1" 200 10288
+"GET /static/assets/js/vendors/jquery.sparkline.min.js HTTP/1.1" 200 43149
+"GET /static/assets/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 51039
+"GET /static/assets/plugins/owl-carousel/owl-main.js HTTP/1.1" 200 1029
+"GET /static/assets/plugins/toggle-sidebar/sidemenu.js HTTP/1.1" 200 891
+"GET /static/assets/plugins/sidebar/sidebar.js HTTP/1.1" 200 3614
+"GET /static/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js HTTP/1.1" 200 45479
+"GET /static/assets/plugins/counters/counter.js HTTP/1.1" 200 1375
+"GET /static/assets/js/index1.js HTTP/1.1" 200 3464
+"GET /static/assets/plugins/chart/utils.js HTTP/1.1" 200 3317
+"GET /static/assets/plugins/counters/jquery.missofis-countdown.js HTTP/1.1" 200 7750
+"GET /static/assets/images/brand/logo1.png HTTP/1.1" 200 4350
+"GET /static/assets/js/custom.js HTTP/1.1" 200 7098
+"GET /static/assets/plugins/owl-carousel/owl.carousel.js HTTP/1.1" 200 89992
+"GET /static/assets/fonts/feather/feather-webfont.woff?t=1501841394106 HTTP/1.1" 200 28984
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/chart/chart.bundle-dark.js HTTP/1.1" 200 398188
+"GET /static/assets/fonts/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+"GET /static/assets/images/brand/logo1.png HTTP/1.1" 200 4350
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+Not Found: /Mini/favicon.png
+"GET /Mini/favicon.png HTTP/1.1" 404 11135
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 200 21927
+Not Found: /Mini/domain/favicon.png
+"GET /Mini/domain/favicon.png HTTP/1.1" 404 11156
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 200 21927
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 1471
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8463
+"POST /login/?next=/ HTTP/1.1" 302 0
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\decorator.py", line 10, in wrapper_function
+    return view_function(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\Dashboard\views.py", line 32, in index
+    user_profile=Profile.objects.get(username=request.user)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+Dashboard.models.Profile.DoesNotExist: Profile matching query does not exist.
+"GET / HTTP/1.1" 500 85434
+"GET /logout/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 1471
+"POST /login/ HTTP/1.1" 302 0
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"GET / HTTP/1.1" 200 43090
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /lockScreen/ HTTP/1.1" 200 1110
+"POST /lockScreen/ HTTP/1.1" 302 0
+- Broken pipe from ('127.0.0.1', 1080)
+
+"POST /lockScreen/ HTTP/1.1" 302 0
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /lockScreen/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+Not Found: /Mini/favicon.png
+"GET /Mini/favicon.png HTTP/1.1" 404 11139
+- Broken pipe from ('127.0.0.1', 1082)
+
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2368
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2368
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8463
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12535
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10706
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/Dashboard/dumps_scanned/5/change/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 1126)
+
+"GET /admin/logout/ HTTP/1.1" 200 1529
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+Not Found: /Mini/error/favicon.png
+"GET /Mini/error/favicon.png HTTP/1.1" 404 11157
+"POST /Mini/domain/ HTTP/1.1" 200 21927
+Not Found: /Mini/domain/favicon.png
+"GET /Mini/domain/favicon.png HTTP/1.1" 404 11160
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 200 21927
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12585
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10706
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/Dashboard/dumps_scanned/5/change/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/Dashboard/dumps_scanned/5/change/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10920
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/logout/ HTTP/1.1" 200 1529
+"GET /Mini/domain/ HTTP/1.1" 200 21876
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12632
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10706
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/Dashboard/dumps_scanned/5/change/ HTTP/1.1" 200 13798
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"POST /Mini/domain/ HTTP/1.1" 200 21501
+"POST /Mini/domain/ HTTP/1.1" 200 21483
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"GET /Mini/domain/ HTTP/1.1" 200 21003
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"GET /Mini/domain/ HTTP/1.1" 200 21003
+"GET /Mini/domain/ HTTP/1.1" 200 21003
+"GET /Mini/domain/ HTTP/1.1" 200 21003
+"GET /admin/logout/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 2262
+"GET /admin/Dashboard/dumps_scanned/5/change/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/Dashboard/dumps_scanned/5/change/ HTTP/1.1" 200 2280
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 2262
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12632
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10706
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/Dashboard/dumps_scanned/5/change/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/logout/ HTTP/1.1" 200 1529
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 34, in domain
+    data=process(search)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py", line 33, in process
+    dataDir['ip']=data['ip']
+KeyError: 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 74210
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 34, in domain
+    data=process(search)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py", line 33, in process
+    dataDir["ip"]=data['ip']
+KeyError: 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 74210
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 200 21003
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21003
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21470
+"POST /admin/Dashboard/dumps_scanned/5/change/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 10920
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/Dashboard/dumps_scanned/add/ HTTP/1.1" 200 13446
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/Dashboard/dumps_scanned/add/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/dumps_scanned/ HTTP/1.1" 200 11135
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 32, in domain
+    abuseDetails=abuse(search)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py", line 134, in abuse
+    return qf.find(ip)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\querycontacts\__init__.py", line 59, in find
+    ip = ipaddress.ip_address(ip)
+  File "c:\users\chinmay\appdata\local\programs\python\python39\lib\ipaddress.py", line 53, in ip_address
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 address' %
+ValueError: None does not appear to be an IPv4 or IPv6 address
+"POST /Mini/domain/ HTTP/1.1" 500 81088
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21458
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21536
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 1471
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+Not Found: /Mini/favicon.png
+"GET /Mini/favicon.png HTTP/1.1" 404 11139
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+Not Found: /Mini/error/favicon.png
+"GET /Mini/error/favicon.png HTTP/1.1" 404 11157
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 34, in domain
+    data=process(search)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py", line 33, in process
+    dataDir["ip"]=data['ip']
+KeyError: 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 74101
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8463
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 34, in domain
+    data=process(search)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py", line 33, in process
+    dataDir["ip"]=data['ip']
+KeyError: 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 74100
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 34, in domain
+    data=process(search)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py", line 34, in process
+    dataDir["ip"]=data['ip']
+KeyError: 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 74083
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 35, in domain
+    ip=data.ip
+AttributeError: 'NoneType' object has no attribute 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 70118
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 35, in domain
+    ip=data.ip
+AttributeError: 'NoneType' object has no attribute 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 70358
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 35, in domain
+    ip=data.ip
+AttributeError: 'dict' object has no attribute 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 70463
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 35, in domain
+    ip=data.ip
+AttributeError: 'dict' object has no attribute 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 70463
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 35, in domain
+    print("DataRes"+data)
+TypeError: can only concatenate str (not "dict") to str
+"POST /Mini/domain/ HTTP/1.1" 500 70459
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 36, in domain
+    ip=data.ip
+AttributeError: 'dict' object has no attribute 'ip'
+"POST /Mini/domain/ HTTP/1.1" 500 70464
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21168
+Not Found: /Mini/domain/favicon.png
+"GET /Mini/domain/favicon.png HTTP/1.1" 404 11160
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21205
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21575
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21575
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 302 0
+"GET /login/?next=/ HTTP/1.1" 200 1471
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8463
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+Not Found: /Mini/favicon.png
+"GET /Mini/favicon.png HTTP/1.1" 404 11139
+"POST /Mini/domain/ HTTP/1.1" 200 21576
+Not Found: /Mini/domain/favicon.png
+"GET /Mini/domain/favicon.png HTTP/1.1" 404 11160
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21624
+E:\CyberHawkz\Cyber\Dashboard\templatetags\custom_tags.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\templatetags\custom_tags.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21742
+Not Found: /Mini/domain/us.gif
+"GET /Mini/domain/us.gif HTTP/1.1" 404 11145
+"POST /Mini/domain/ HTTP/1.1" 200 21756
+"GET /static/flags/us.gif HTTP/1.1" 200 359
+"POST /Mini/domain/ HTTP/1.1" 200 21721
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert HTTP/1.1" 301 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 93, in setAlert
+    return render(request,'CyberhawkzMin/setAlert.html')
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: CyberhawkzMin/setAlert.html
+"GET /Mini/setAlert/ HTTP/1.1" 500 83776
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14158
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Not Found: /Mini/setAlert/favicon.png
+"GET /Mini/setAlert/favicon.png HTTP/1.1" 404 11344
+Forbidden (CSRF token missing or incorrect.): /Mini/setAlert/
+"POST /Mini/setAlert/ HTTP/1.1" 403 2519
+Not Found: /Mini/setAlert/file.txt
+"GET /Mini/setAlert/file.txt HTTP/1.1" 404 11335
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+Not Found: /Mini/error/favicon.png
+"GET /Mini/error/favicon.png HTTP/1.1" 404 11335
+"POST /Mini/domain/ HTTP/1.1" 200 24176
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21366
+"POST /Mini/domain/ HTTP/1.1" 200 21366
+"POST /Mini/domain/ HTTP/1.1" 200 21786
+"POST /Mini/domain/ HTTP/1.1" 200 21819
+Not Found: /Mini/domain/{% url 'setAlert'}
+"GET /Mini/domain/%7B%%20url%20'setAlert'%7D HTTP/1.1" 404 11399
+"POST /Mini/domain/ HTTP/1.1" 200 21816
+"GET /Mini/setAlert/ HTTP/1.1" 200 14158
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /Mini/setAlert/ HTTP/1.1" 200 14158
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /Mini/setAlert/ HTTP/1.1" 200 14158
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14158
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/loginMini/?next=/Mini/setAlert/ HTTP/1.1" 200 1471
+"POST /Mini/loginMini/?next=/Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14158
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Forbidden (CSRF token missing or incorrect.): /Mini/domain/
+"POST /Mini/domain/ HTTP/1.1" 403 2519
+"GET /Mini/ HTTP/1.1" 200 31829
+"POST /Mini/domain/ HTTP/1.1" 200 21817
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+"POST /Mini/loginMini/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14158
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\Dashboard\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14174
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /Mini/setAlert/ HTTP/1.1" 200 14185
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Forbidden (CSRF token missing or incorrect.): /Mini/setAlert/
+"POST /Mini/setAlert/ HTTP/1.1" 403 2519
+Forbidden (CSRF token missing or incorrect.): /Mini/setAlert/
+"POST /Mini/setAlert/ HTTP/1.1" 403 2519
+"GET /Mini/setAlert/ HTTP/1.1" 200 14335
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 98, in setAlert
+    token = hashlib.md5(f"{link + str(datetime.datetime.now()) + salt}".encode()).hexdigest()
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+"POST /Mini/setAlert/ HTTP/1.1" 500 75843
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 99, in setAlert
+    monitor_site = Monitored_sites.objects.get_or_create(
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 581, in get_or_create
+    return self.get(**kwargs), False
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.MultipleObjectsReturned(
+Dashboard.models.Monitored_sites.MultipleObjectsReturned: get() returned more than one Monitored_sites -- it returned 2!
+"POST /Mini/setAlert/ HTTP/1.1" 500 89477
+"GET /Mini/setAlert/ HTTP/1.1" 200 14335
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 99, in setAlert
+    monitor_site = Monitored_sites.objects.get_or_create(
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 581, in get_or_create
+    return self.get(**kwargs), False
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.MultipleObjectsReturned(
+Dashboard.models.Monitored_sites.MultipleObjectsReturned: get() returned more than one Monitored_sites -- it returned 2!
+"POST /Mini/setAlert/ HTTP/1.1" 500 89477
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12739
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11014
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/auth/user/ HTTP/1.1" 200 14440
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11014
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14335
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 104, in setAlert
+    monitor_site.update(link=link)
+AttributeError: 'tuple' object has no attribute 'update'
+"POST /Mini/setAlert/ HTTP/1.1" 500 76105
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 104, in setAlert
+    monitor_site.update(link=link)
+AttributeError: 'tuple' object has no attribute 'update'
+"POST /Mini/setAlert/ HTTP/1.1" 500 76151
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14335
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 99, in setAlert
+    monitor_site = Monitored_sites.objects.get_or_create(
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+TypeError: get_or_create() takes from 1 to 2 positional arguments but 3 were given
+"POST /Mini/setAlert/ HTTP/1.1" 500 80381
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14335
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14335
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11438
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 9371
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/Dashboard/monitored_sites/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11160
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14335
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11249
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/Dashboard/monitored_sites/7/change/ HTTP/1.1" 200 13683
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8804
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"POST /admin/Dashboard/monitored_sites/7/change/ HTTP/1.1" 200 13911
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/Dashboard/monitored_sites/7/delete/ HTTP/1.1" 200 9148
+"POST /admin/Dashboard/monitored_sites/7/delete/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11195
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+TypeError: generateFile() missing 1 required positional argument: 'url'
+"GET /Mini/generateFile/ HTTP/1.1" 500 70799
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /Mini/setAlert/
+"GET /Mini/setAlert/ HTTP/1.1" 404 11693
+Not Found: /Mini/setAlert/
+"GET /Mini/setAlert/ HTTP/1.1" 404 11693
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /Mini/setAlert/
+"GET /Mini/setAlert/ HTTP/1.1" 404 11693
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11249
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /Mini/domain/ HTTP/1.1" 200 21752
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+Internal Server Error: /Mini/loginMini/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 128, in loginMini
+    return redirect('setAlert',"")
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'setAlert' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/setAlert/(?P<url>[-a-zA-Z0-9_]+)$']
+"POST /Mini/loginMini/ HTTP/1.1" 500 92503
+"POST /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 9243
+"POST /admin/Dashboard/monitored_sites/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11159
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+"POST /Mini/loginMini/ HTTP/1.1" 302 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 107, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with keyword arguments '{'url': ''}' not found. 1 pattern(s) tried: ['Mini/generateFile/$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 172524
+"GET /Mini/setAlert/ HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 105, in setAlert
+    return redirect('setAlert',link)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'setAlert' with arguments '('https://cyberhawkz.com/',)' not found. 1 pattern(s) tried: ['Mini/setAlert/$']
+"POST /Mini/setAlert/ HTTP/1.1" 500 96494
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11249
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11486
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 9419
+"POST /admin/Dashboard/monitored_sites/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11160
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+- Broken pipe from ('127.0.0.1', 1532)
+
+"GET /Mini/setAlert/ HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert?url= HTTP/1.1" 301 0
+"GET /Mini/setAlert/?url= HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/?url= HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11014
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert?url= HTTP/1.1" 301 0
+"GET /Mini/setAlert/?url= HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert?url=abc HTTP/1.1" 301 0
+"GET /Mini/setAlert/?url=abc HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\utils.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert?url=https://cyberhawkz.com/ HTTP/1.1" 301 0
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14346
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 97, in generateFile
+    monitor_site = Monitored_sites.objects.get(username__username__username=request.user.username, link=url)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+Dashboard.models.Monitored_sites.DoesNotExist: Monitored_sites matching query does not exist.
+"GET /Mini/generateFile/ HTTP/1.1" 500 83645
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14346
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Forbidden (CSRF token missing or incorrect.): /Mini/setAlert/
+"POST /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 403 2519
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'chinmay'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 97, in generateFile
+    monitor_site = Monitored_sites.objects.get(username=request.user.username, link=url)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\sql\query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\sql\query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\sql\query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\sql\query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\fields\related_lookups.py", line 117, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\fields\__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'chinmay'.
+"GET /Mini/generateFile/ HTTP/1.1" 500 138521
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14346
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 97, in generateFile
+    monitor_site = Monitored_sites.objects.get(username = Profile.objects.get(username__username=request.user.username), link=url)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+Dashboard.models.Monitored_sites.DoesNotExist: Monitored_sites matching query does not exist.
+"GET /Mini/generateFile/ HTTP/1.1" 500 83659
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11251
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/Dashboard/monitored_sites/11/change/ HTTP/1.1" 200 13685
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11251
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14346
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 97, in generateFile
+    monitor_site = Monitored_sites.objects.get(username = Profile.objects.get(username__username=request.user.username).id, link=url)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+Dashboard.models.Monitored_sites.DoesNotExist: Monitored_sites matching query does not exist.
+"GET /Mini/generateFile/ HTTP/1.1" 500 83619
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14346
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 97, in generateFile
+    user=Profile.objects.get(username__username=request.user.username).id()
+TypeError: 'int' object is not callable
+"GET /Mini/generateFile/ HTTP/1.1" 500 74427
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14346
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 97, in generateFile
+    user=Profile.objects.get(username__username=request.user.username)["id"]
+TypeError: 'Profile' object is not subscriptable
+"GET /Mini/generateFile/ HTTP/1.1" 500 74485
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14346
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 99, in generateFile
+    monitor_site = Monitored_sites.objects.get(username =user , link=url)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+Dashboard.models.Monitored_sites.DoesNotExist: Monitored_sites matching query does not exist.
+"GET /Mini/generateFile/ HTTP/1.1" 500 83788
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 200 14346
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Internal Server Error: /Mini/generateFile/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 99, in generateFile
+    monitor_site = Monitored_sites.objects.get(username =user , link=url)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+Dashboard.models.Monitored_sites.DoesNotExist: Monitored_sites matching query does not exist.
+"GET /Mini/generateFile/ HTTP/1.1" 500 83787
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\sessions\backends\base.py", line 233, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\base\base.py", line 219, in ensure_connection
+    self.connect()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\base\base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\MySQLdb\__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to MySQL server on '184.168.112.45' (10060)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 44, in <lambda>
+    lambda u: u.is_authenticated,
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\utils\functional.py", line 246, in inner
+    self._setup()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\utils\functional.py", line 382, in _setup
+    self._wrapped = self._setupfunc()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\middleware.py", line 23, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\__init__.py", line 177, in get_user
+    user_id = _get_user_session_key(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\sessions\backends\base.py", line 65, in __getitem__
+    return self._session[key]
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\sessions\backends\base.py", line 238, in _get_session
+    self._session_cache = self.load()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 431, in get
+    num = len(clone)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 262, in __len__
+    self._fetch_all()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\models\sql\compiler.py", line 1173, in execute_sql
+    cursor = self.connection.cursor()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\base\base.py", line 259, in cursor
+    return self._cursor()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\base\base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\base\base.py", line 219, in ensure_connection
+    self.connect()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\base\base.py", line 219, in ensure_connection
+    self.connect()
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\base\base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\db\backends\mysql\base.py", line 234, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\MySQLdb\__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2002, "Can't connect to MySQL server on '184.168.112.45' (10060)")
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 500 273287
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert?url=https://cyberhawkz.com/ HTTP/1.1" 301 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 117, in setAlert
+    url=request.GET.get()
+TypeError: get() missing 1 required positional argument: 'key'
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 500 74837
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert?url=https://cyberhawkz.com/ HTTP/1.1" 301 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with keyword arguments '{'url': 'https://cyberhawkz.com/'}' not found. 1 pattern(s) tried: ['Mini/generateFile/$']
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 500 173386
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with keyword arguments '{'url': 'abc'}' not found. 1 pattern(s) tried: ['Mini/generateFile/$']
+"GET /Mini/setAlert/?url=abc HTTP/1.1" 500 172589
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert?url=https://cyberhawkz.com/ HTTP/1.1" 301 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with keyword arguments '{'url': 'https://cyberhawkz.com/'}' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<url>[^/]+)$']
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 500 174980
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with keyword arguments '{'url': ''}' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<url>[^/]+)$']
+"GET /Mini/setAlert/?url= HTTP/1.1" 500 174000
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with keyword arguments '{'url': ''}' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<url>[^/]+)$']
+"GET /Mini/setAlert/?url= HTTP/1.1" 500 174000
+"GET /Mini/setAlert/ HTTP/1.1" 200 14350
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert?url=https://cyberhawkz.com/ HTTP/1.1" 301 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with keyword arguments '{'url': 'https://cyberhawkz.com/'}' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<url>[^/]+)$']
+"GET /Mini/setAlert/?url=https://cyberhawkz.com/ HTTP/1.1" 500 174975
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<link>[^/]+)$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 173141
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<link>[^/]+)$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 173004
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 12199
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"POST /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 9946
+"POST /admin/Dashboard/monitored_sites/ HTTP/1.1" 302 0
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11160
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<link>[^/]+)$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 173004
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<link>[^/]+)/$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 173155
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 119, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<link>[^/]+)/$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 173156
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11014
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /Mini/loginMini/
+"GET /Mini/loginMini/ HTTP/1.1" 404 11731
+"GET /Mini/domain HTTP/1.1" 301 0
+"GET /Mini/domain/ HTTP/1.1" 200 21147
+"GET /static/flags/.gif HTTP/1.1" 404 1789
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 200 21314
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 46, in domain
+    return render(request,'CyberhawkzMini/domain.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'loginMini' with keyword arguments '{'link': 'https://cyberhawkz.com/'}' not found. 1 pattern(s) tried: ['Mini/loginMini/(?P<link>[^/]+)/$']
+"POST /Mini/domain/ HTTP/1.1" 500 194466
+Internal Server Error: /Mini/domain/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 46, in domain
+    return render(request,'CyberhawkzMini/domain.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'loginMini' with arguments '('https://cyberhawkz.com/',)' not found. 1 pattern(s) tried: ['Mini/loginMini/(?P<link>[^/]+)/$']
+"POST /Mini/domain/ HTTP/1.1" 500 194199
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21801
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 302 0
+"GET /Mini/error/ HTTP/1.1" 200 8496
+"POST /Mini/domain/ HTTP/1.1" 200 21817
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+"POST /Mini/loginMini/ HTTP/1.1" 302 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 117, in setAlert
+    context={"link":link}
+UnboundLocalError: local variable 'link' referenced before assignment
+"GET /Mini/setAlert/ HTTP/1.1" 500 74417
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 118, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<link>[^/]+)/$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 172781
+Forbidden (CSRF token missing or incorrect.): /Mini/loginMini/
+"POST /Mini/loginMini/ HTTP/1.1" 403 2519
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+"POST /Mini/loginMini/ HTTP/1.1" 302 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 118, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<link>[^/]+)/$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 172781
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+"POST /Mini/domain/ HTTP/1.1" 200 21817
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+"POST /Mini/loginMini/ HTTP/1.1" 302 0
+Internal Server Error: /Mini/setAlert/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 118, in setAlert
+    return render(request, 'CyberhawkzMini/setAlert.html',context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generateFile' with arguments '('',)' not found. 1 pattern(s) tried: ['Mini/generateFile/(?P<link>[^/]+)/$']
+"GET /Mini/setAlert/ HTTP/1.1" 500 172781
+"GET /Mini/setAlert/ HTTP/1.1" 200 14328
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11014
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+Watching for file changes with StatReloader
+- Broken pipe from ('127.0.0.1', 24650)
+
+"GET / HTTP/1.1" 200 43080
+"GET /static/assets/plugins/bootstrap-daterangepicker/daterangepicker.js HTTP/1.1" 404 1936
+"GET /Mini/ HTTP/1.1" 200 31829
+"GET /static/assets/assets/images/png-images/home-carousel.png HTTP/1.1" 404 1906
+Not Found: /Mini/favicon.png
+"GET /Mini/favicon.png HTTP/1.1" 404 11700
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/domain/ HTTP/1.1" 200 21817
+Not Found: /Mini/domain/favicon.png
+"GET /Mini/domain/favicon.png HTTP/1.1" 404 11916
+"GET /Mini/loginMini/ HTTP/1.1" 200 1471
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8463
+"POST /Mini/loginMini/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14596
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+Not Found: /Mini/setAlert/favicon.png
+"GET /Mini/setAlert/favicon.png HTTP/1.1" 404 11922
+"GET /Mini/setAlert/ HTTP/1.1" 200 14596
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14614
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /Mini/generateFile/ HTTP/1.1" 200 32
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14614
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /Mini/generateFile/ HTTP/1.1" 200 32
+Internal Server Error: /Mini/verify_website_monitoring/
+Traceback (most recent call last):
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CyberHawkzMini\envcyber\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\CyberHawkz\Cyber\CyberhawkzMini\views.py", line 109, in verify_website_monitoring
+    response = requests.get(f'{monitor_site.first().link}/{monitor_site.first().token}.txt')
+NameError: name 'requests' is not defined
+"POST /Mini/verify_website_monitoring/ HTTP/1.1" 500 75782
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /Mini/verify_website_monitoring/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14596
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+E:\CyberHawkz\Cyber\Dashboard\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\Dashboard\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+E:\CyberHawkz\Cyber\CyberhawkzMini\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /Mini/setAlert/ HTTP/1.1" 200 14596
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"POST /Mini/setAlert/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14614
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+"GET /static/admin/css/login.css HTTP/1.1" 200 939
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 12569
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11251
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"POST /Mini/verify_website_monitoring/ HTTP/1.1" 302 0
+"GET /Mini/setAlert/ HTTP/1.1" 200 14596
+"GET /static/assets/images/headers/contact.jpeg HTTP/1.1" 404 1861
+"GET /admin/Dashboard/monitored_sites/ HTTP/1.1" 200 11014
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+E:\CyberHawkz\Cyber\cyber\settings.py changed, reloading.

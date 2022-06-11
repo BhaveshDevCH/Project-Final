@@ -1,0 +1,470 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+{% load custom_tags %}
+{% block title %} Dashboard {% endblock title %}
+{% block content %}
+<!-- app-content-->
+<div class="app-content  my-3 my-md-5">
+    <div class="side-app">
+        <div class="bg-white p-3 header-secondary row">
+            <div class="col">
+                <div class="d-flex">
+                    <a class="btn btn-danger" href="{% url 'pricing' %}"><i class="fe fe-rotate-cw mr-1 mt-1"></i>
+                        Upgrade </a>
+                </div>
+
+            </div>
+            <div class="col col-auto">
+                <a class="btn btn-light mt-4 mt-sm-0" href="support.php"><i class="fe fe-help-circle mr-1 mt-1"></i>
+                    Support</a>
+                <a class="btn btn-success mt-4 mt-sm-0" href="{% url 'indexer' %}"><i class="fe fe-plus mr-1 mt-1"></i>
+                    Indexer</a>
+            </div>
+        </div>
+        <!-- page-header -->
+        <div class="page-header">
+            <div class="ml-auto">
+
+            </div>
+        </div>
+        <!-- End page-header -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel owl-carousel2 owl-theme mb-5">
+                    <div class="item">
+                        <div class="card mb-0">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="feature">
+                                        <div class="fa-stack fa-lg fa-2x icon bg-primary">
+                                            <i class="fa fa-server fa-stack-1x text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body p-3  d-flex">
+                                        <div>
+                                            <p class="text-muted mb-1">Data Indexed</p>
+                                            <h2 class="mb-0 text-dark">6.4 TB</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                    <div class="item">
+                        <div class="card mb-0">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="feature">
+                                        <div class="fa-stack fa-lg fa-2x icon bg-green">
+                                            <i class="fa fa-sitemap fa-stack-1x text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body p-3  d-flex">
+                                        <div>
+                                            <p class="text-muted mb-1">TOR SITES</p>
+                                            <h2 class="mb-0 text-dark">3576</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                    <div class="item">
+                        <div class="card mb-0">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="feature">
+                                        <div class="fa-stack fa-lg fa-2x icon bg-secondary">
+                                            <i class="fa fa-id-card fa-stack-1x text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body p-3  d-flex">
+                                        <div>
+                                            <p class="text-muted mb-1">SITE LOOKUP</p>
+                                            <h2 class="mb-0 text-dark">1800+</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                    <div class="item">
+                        <div class="card mb-0">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="feature">
+                                        <div class="fa-stack fa-lg fa-2x icon bg-yellow">
+                                            <i class="fa fa-database fa-stack-1x text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body p-3  d-flex">
+                                        <div>
+                                            <p class="text-muted mb-1">Data Leaks</p>
+                                            <h2 class="mb-0 text-dark">{{data_leak}}</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xl-7 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header custom-header">
+                        <div>
+                            <h3 class="card-title">Dark Web Indexing</h3>
+                            <h6 class="card-subtitle">Overview of dark Web Coverage</h6>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <canvas id="conversion" class="chart-drop"></canvas>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-sm-6">
+                                <div class="text-center mt-0">
+                                    <h5 class="mb-1 text-muted">Listed Sites</h5>
+                                    <h2 class="mb-0 mt-2 fs-2 text-dark mainvalue">2,653</h2>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-6">
+                                <div class="text-center mt-4 mt-sm-0">
+                                    <h5 class="mb-1 text-muted">Viewable</h5>
+                                    <h2 class="mb-0 mt-2 fs-2 text-dark mainvalue">1800</h2>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-6">
+                                <div class="text-center mt-4 mt-lg-0">
+                                    <h5 class="mb-1 text-muted">TOR</h5>
+                                    <h2 class="mb-0 mt-2 fs-2 text-dark mainvalue">1330</h2>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-6">
+                                <div class="text-center mt-4 mt-lg-0">
+                                    <h5 class="mb-1 text-muted">I2P</h5>
+                                    <h2 class="mb-0 mt-2 fs-2 text-dark mainvalue">1323</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12">
+                <div class="card  bg-gradient-danger">
+                    <div class="card-body text-center p-6">
+                        <div class="sale-wideget">
+                            <div class="text-white h3 mb-5"><b>Limited Time Offer</b></div>
+                            <span class="bg-white-transparent icon-service text-white">
+                                <i class="fa fa-3x fa-shopping-cart  fs-2"></i>
+                            </span>
+                            <div class="text-white h1 fs-3 mt-4 mb-2">50% Off </div>
+                            <h5 class="text-white fs-20">Elite Plan</h5>
+                            <p class="text-white">Keep your enterprise safe and monitored from a single
+                                dashboard with best in class features.</p>
+                            <a href="#" class="btn btn-danger text-white">Upgrade Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Row ends-->
+
+
+
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header ">
+                        <h2 class="card-title">Threat Bulletein</h2>
+                    </div>
+                    <div>
+                        <table class="table card-table ">
+                            {% for b in bulletein %}
+                            <tr class="border-bottom">
+                                <td class="border-top-0" style="color: white;">{{b.malware}}</td>
+                                <td class="text-right border-top-0">
+                                    <span class="badge badge-primary">{{b.tags}}</span>
+                                    <span class="badge badge-success">{{b.analysed}}</span>
+                                    <span class="badge badge-danger">{{b.status}}</span>
+                                </td>
+                            </tr>
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <div class="row">
+                    <div class="col-xl-6 col-md-12">
+                        <div class="card card-img-holder">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <div class="float-left">
+                                        <p class="text-muted mb-1">Plan Type</p>
+                                        <h1 class="mb-0 text-dark mainvalue font-weight-semibold">
+                                            {{request.user.user_plan.plan}}</h1>
+                                    </div>
+                                    <div class="float-right text-right mt-2">
+                                        <span>Exp:{{request.user.user_plan.plan_exp}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12">
+                        <div class="card card-img-holder">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <div class="float-left">
+                                        <p class="text-muted mb-1">Credits Left</p>
+                                        <h1 class="mb-0 text-dark mainvalue font-weight-semibold">
+                                            {{request.user.user_profile.credits}}</h1>
+                                    </div>
+                                    <div class="float-right text-right mt-2">
+                                        <span>/{{request.user.user_profile.max_credits}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-sm-6 border-right">
+                                    <div class="card-body iconfont text-center">
+                                        <h5 class="text-muted">Data Leaks Analyzed</h5>
+                                        <h1 class="mt-4 text-dark mainvalue font-weight-semibold">{{data_leak}}
+                                        </h1>
+                                        <p><span class="text-purple"><i class="fa fa-arrow-up text-success mr-1">
+                                                </i>67% </span> in
+                                            this Quarter</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card-body iconfont text-center">
+                                        <h5 class="text-muted">Organisations Breached</h5>
+                                        <h1 class="mt-4 text-dark mainvalue font-weight-semibold">
+                                            {{data_leak_org}}</h1>
+                                        <p><span class="text-purple"><i class="fa fa-arrow-down text-danger mr-1">
+                                                </i>4.2%</span>
+                                            in this year</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Websites Analyzed
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="counter text-success">{{site_analyzed}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Threat Actors Identified
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="counter text-success">{{threat_identified}}</h2>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-xl-3 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Threat Report Analyzed
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="counter text-success">{{report_count}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Cyber Threats Analyzed
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="counter text-success">{{cyber_threats}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header custom-header">
+                        <div>
+                            <h3 class="card-title">Your Protection Status</h3>
+                            <h6 class="card-subtitle">Scanning Status</h6>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+
+                        <div class="list-group projects-list">
+                            {% for iprotection in iprotections%}
+                            <a href="#"
+                                class="list-group-item list-group-item-action flex-column align-items-start border-top-0">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 font-weight-sembold"><strong>
+                                            {{iprotection.status|status}}
+                                        </strong></h5>
+                                    <small class="text-danger"><i
+                                            class="fa fa-caret-down mr-1"></i>{{iprotection.init_date|currentDate}}</small>
+                                </div>
+                                <p class="mb-0 text-dark">{{iprotection.identity}}</p>
+                            </a>
+                            {% endfor %} {% for sprotection in sprotections%}
+                            <a href="#"
+                                class="list-group-item list-group-item-action flex-column align-items-start border-top-0">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 font-weight-sembold"><strong>
+                                            {{sprotection.status|status}}
+                                        </strong></h5>
+                                    <small class="text-danger"><i
+                                            class="fa fa-caret-down mr-1"></i>{{sprotection.initDate|currentDate}}</small>
+                                </div>
+                                <p class="mb-0 text-dark">{{sprotection.site}}</p>
+                            </a>
+                            {% endfor %} {% for eprotection in eprotections%}
+                            <a href="#"
+                                class="list-group-item list-group-item-action flex-column align-items-start border-top-0">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1 font-weight-sembold"><strong>
+                                            {{eprotection.status|status}}
+                                        </strong></h5>
+                                    <small class="text-danger"><i
+                                            class="fa fa-caret-down mr-1"></i>{{eprotection.initDate|currentDate}}</small>
+                                </div>
+                                <p class="mb-0 text-dark">{{eprotection.email}}</p>
+                            </a>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-12 col-md-12">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header custom-header">
+                            <div>
+                                <h3 class="card-title">Latest News</h3>
+                                <h6 class="card-subtitle">Freshly fetched content from Our Blog</h6>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="latest-timeline">
+                                <ul class="timeline mb-0">
+                                    {% for b in blog%}
+                                    <li class="mt-0">
+                                        <a target="_blank" href="#"
+                                            class="font-weight-semibold text-default fs-17">{{b.title}}</a>
+                                        <a href="#" class="float-right">{{b.time}}</a>
+                                        <p class="text-muted">{{b.link}}</p>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header custom-header">
+                        <div>
+                            <h3 class="card-title">Recent Data Leaks</h3>
+                            <h6 class="card-subtitle">Recently Breached Sites </h6>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-nowrap mb-0 text-dark">
+                                <thead>
+                                    <tr>
+                                        <th>Leak Name</th>
+                                        <th>Domain</th>
+                                        <th>Leak Size</th>
+                                        <th>Source</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for dump in dumps_list %}
+                                    <tr>
+
+                                        <td>{{dump.dump_name}}</td>
+                                        <td>{{dump.dump_source}}</td>
+                                        <td>{{dump.dump_size}}</td>
+                                        <td>{{dump.dump_source}}</td>
+                                        <td><span class="badge badge-success">{{dump.dump_status}}</span></td>
+
+                                    </tr>
+                                    {% endfor %}
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script>
+    const data = {{graph_data|safe}}
+</script>
+
+{% endblock content %}

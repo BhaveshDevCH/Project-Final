@@ -1,0 +1,60 @@
+<html>
+{% load static %}
+
+<head>
+    <Title>Login | CyberHawkz</Title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "assets/css/login.css" %}'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="form">
+
+
+        <h2>Personal Details</h2>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %} {% for message in messages %} {{message}} {% endfor %}
+            <div class="input">
+                <div class="inputBox">
+                    <label for="">First Name</label>
+                    {{form.first_name}}
+                </div>
+                <div class="inputBox">
+                    <label for="">Last Name</label>
+                    {{form.last_name}}
+                </div>
+                <div class="inputBox">
+                    <label for="">Website Link</label>
+                    {{form.website_link}}
+                </div>
+                <div class="inputBox">
+                    <label for="">Organization</label>
+                    {{form.organization}}
+                </div>
+                <div class="inputBox">
+                    <label for="">Profile Image</label>
+                    {{form.profile_img}}
+                </div>
+                <div class="inputBox">
+                    <label for="">Phone Number</label>
+                    {{form.phone}}
+                </div>
+                <div class="inputBox">
+                    <label for="">Country</label>
+                    {{form.country}}
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Register">
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

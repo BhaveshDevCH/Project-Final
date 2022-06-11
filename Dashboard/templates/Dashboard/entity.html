@@ -1,0 +1,220 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+{% load custom_tags %}
+{% block title %} Entity {% endblock title %}
+
+{% block content %}
+<div class="app-content  my-3 my-md-5">
+    <div class="side-app">
+        <div class="bg-white p-3 header-secondary row">
+            <div class="col">
+                <div class="d-flex">
+
+                    <a class="btn btn-danger" href="#"><i class="fe fe-rotate-cw mr-1 mt-1"></i> Upgrade </a>
+                </div>
+            </div>
+            <div class="col col-auto">
+                <a class="btn btn-light mt-4 mt-sm-0" href="#"><i class="fe fe-help-circle mr-1 mt-1"></i> Support</a>
+                <a class="btn btn-success mt-4 mt-sm-0" href="#"><i class="fe fe-plus mr-1 mt-1"></i> Add New</a>
+            </div>
+        </div>
+
+        <!-- page-header -->
+        <div class="page-header">
+            <ol class="breadcrumb">
+                <!-- breadcrumb -->
+                <li class="breadcrumb-item"><a href="#">Elements</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Panels</li>
+            </ol><!-- End breadcrumb -->
+
+        </div>
+        <!-- End page-header -->
+
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">{{obj.name}}</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <div class="expanel expanel-danger">
+                                    <div class="expanel-heading clearfix">STIX ID
+                                        <div class="float-right">
+                                            <button class="btn btn-sm btn-light" type="button" data-toggle="collapse"
+                                                data-target="#collapse1" aria-expanded="true"
+                                                aria-controls="collapse1"><i class="fa fa-bars"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="expanel-body collapse show" id="collapse1">
+                                        {% if obj.created_by_ref.object_id %}
+                                        <p>Other known STIX ID for this entity.</p>
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a href="{% url 'entity' obj.created_by_ref.object_id %}">{{obj.created_by_ref.object_id}}</a></li>
+                                        </ul>
+                                        {% endif %}
+                                        
+                                        <div class="row m-3">
+                                            <div class="col-md-6">
+                                                <p>Type: <span class="badge badge-danger badge-md"> {{stix_type}}</span></p>
+                                                <p>Stix Version: {{obj.spec_version}}</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Creation Date: <br>{{obj.created}}</p>
+                                                <p>Modification Date:<br> {{obj.modified}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="expanel expanel-danger">
+                                    <div class="expanel-heading clearfix">Entity Description
+                                        <div class="float-right">
+                                            <button class="btn btn-sm btn-danger" type="button" data-toggle="collapse"
+                                                data-target="#collapse05" aria-expanded="false"
+                                                aria-controls="collapse05"><i class="fa fa-bars"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="expanel-body collapse" id="collapse05">
+                                        {% if hashes %}
+                                        <p>Hashes</p>
+                                        {% for key, value in hashes.items %}
+                                        <p>{{key}}: {{value}}</p>
+                                        {% endfor %}
+                                        {% endif %}
+                                        <p>Description</p>
+                                        <p>{{obj.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% if stix_type == 'indicator' or stix_type == 'ipv4-addr' or stix_type == 'url' %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="expanel expanel-danger">
+                                    <div class="expanel-heading">
+                                        <h3 class="expanel-title">Entity Details</h3>
+                                    </div>
+                                    <div class="expanel-body">
+                                        {% if stix_type == 'domain-name' or stix_type == 'url' or stix_type == 'ipv4-addr' %}
+                                        <p>Value: {{obj.value}}</p>
+                                        {% else %}
+                                        <p>Name: {{obj.name}}</p>
+                                        {% endif %}
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="expanel expanel-danger">
+                                    <div class="expanel-heading">
+                                        <h3 class="expanel-title">Entity Details</h3>
+                                    </div>
+                                    <div class="expanel-body">
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if stix_type == 'malware' or stix_type == 'tool' %}
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="expanel expanel-danger">
+                                    <div class="expanel-heading">
+                                        <h3 class="expanel-title">References</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">IsFamily: {{obj.is_family}}</li>
+                                                <li class="list-group-item">MalwareTypes: 
+                                                    {% for o  in obj.malware_types.all %}
+                                                    <span class="badge badge-primary badge-md">{{o.type}}</span>
+                                                    {% endfor %}
+                                                    
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">FirstSeen: {{obj.first_seen}}</li>
+                                                <li class="list-group-item">LastSeen: {{obj.last_seen}}</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">ImplementationLanguage:
+                                                    {% for o  in obj.implementation_languages.all %}
+                                                    <span class="badge badge-primary badge-md">{{o.language}}</span>
+                                                    {% endfor %}
+                                                </li>
+                                                <li class="list-group-item">Kill Chain Phases:
+                                                    {% for o  in obj.kill_chain_phases.all %}
+                                                    <span class="badge badge-primary badge-md">{{o.phase_name}}</span>
+                                                    {% endfor %}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="expanel expanel-danger">
+                                    <div class="expanel-heading">
+                                        <h3 class="expanel-title">References</h3>
+                                    </div>
+                                    <ul class="list-group">
+                                        {% if ref %}
+                                        {% for r in ref %}
+                                        <li class="list-group-item"><a href="{% url 'entity' r.object_id.object_id %}">{{r.object_id.object_id}}</a></li>
+                                        {% endfor %}
+                                        {% else %}
+                                        <li class="list-group-item">No References Found</li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="expanel expanel-danger">
+                                    <div class="expanel-heading">
+                                        <h3 class="expanel-title">Related Reports</h3>
+                                    </div>
+
+                                    <ul class="list-group">
+                                        {% if report %}
+                                        {% for r in report %}
+                                        <li class="list-group-item"><a href="{% url 'entity' r.object_id.object_id %}">{{r.object_id.object_id}}</a></li>
+                                        {% endfor %}
+                                        {% else %}
+                                        <li class="list-group-item">No Reports Found</li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div><!-- col end -->
+
+    <!-- row end -->
+
+
+
+
+{% endblock content %}

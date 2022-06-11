@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block body %}
+{% load custom_tags %}
+<div class="content-wrap">
+    <div class="main">
+        <div class="container-fluid">
+            <div id="main-content">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card alert">
+                            <div class="card-header pr">
+                                <h4>Email Monitored</h4>
+                                <form action="" method="get">
+                                    <div class="search-action">
+                                        <div class="search-type dib">
+                                            <input style="width: 135%;" class="form-control input-rounded" name="search" placeholder="Search by Email"
+                                                type="text">
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table student-data-table m-t-20">
+                                        <thead>
+                                            <tr>
+                                                <th>Email Monitored</th>
+                                                <th>Email Notified</th>
+                                                <th>Status</th>
+                                                <th>Timestamp</th>
+                                                <th>Inactive Date</th>
+                                                <th>Notified</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for m in monitored_email %}
+                                            <tr>
+                                                <td>{{m.email}}</td>
+                                                <td>{{m.emailNotify}}</td>
+                                                <td>{{m.status}}</td>
+                                                <td>{{m.initDate}}</td>
+                                                <td>{{m.inactiveDate}}</td>
+                                                <td>{{m.dumpsNotify}}</td>
+
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="d-flex justify-content-center pagination">
+                                    {% if monitored_email.has_previous %}
+                                    <span class="m-l-10"><a href="{% url 'email_monitored' %}?page=1" class="btn btn-dark">&laquo; first</a></span>
+                                    <span class="m-r-10"><a href="{% url 'email_monitored' %}?page={{ monitored_email.previous_page_number }}" class="btn btn-success">Previous</a></span>
+                                    {% endif %}
+
+                                    <span>{{ monitored_email.number }} - {{ monitored_email.paginator.num_pages }}</span>
+
+                                    {% if monitored_email.has_next %}
+                                    <span class="m-l-10"><a href="{% url 'email_monitored' %}?page={{ monitored_email.next_page_number }}" class="btn btn-success">Next</a></span>
+                                    <span class="m-r-10"><a href="{% url 'email_monitored' %}?page={{ monitored_email.paginator.num_pages }}" class="btn btn-dark">last &raquo;</a></span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

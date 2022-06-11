@@ -1,0 +1,133 @@
+{% extends "Dashboard/base.html" %} {% load static %} {% block title %} Profile {% endblock title %} {% block content %}
+<div class="page">
+
+    <div class="page-main">
+        <div class="app-content  my-3 my-md-5">
+            <div class="side-app">
+                <div class="bg-white p-3 header-secondary row">
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-xl-4 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">My Profile</h3>
+
+                            </div>
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <div class="userprofile ">
+                                        <div class="userpic  brround"> 
+                                            {% if user.profile_img %}
+                                            <img src="{{user.profile_img.url}}" alt="" class="userpicimg">
+                                            {% else %}
+                                            <img src="{% static 'assets/images/users/female/33.png' %}" alt="" class="userpicimg">
+                                            {% endif %}
+                                        </div>
+                                        <br>
+                                        <h3 class="username mb-2">{{user.username}}</h3>
+
+
+                                        <p class="mb-1">{{user.website_link}}</p>
+
+                                        <div class="socials text-center mt-3">
+                                            <a href="" class="btn btn-circle btn-primary ">
+                                                <i class="fa fa-facebook"></i></a>
+                                            <a href="{{user.facebook}}" target="_blank" class="btn btn-circle btn-danger ">
+                                                <i class="fa fa-google-plus"></i></a>
+                                            <a href="{{user.linkedin}}" target="_blank" class="btn btn-circle btn-info ">
+                                                <i class="fa fa-twitter"></i></a> <a href="{{user.twitter}}" target="_blank" class="btn btn-circle btn-warning "><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="row text-center clearfix mb-0">
+                                    <li class="col-sm-4">
+                                        <span class="text-dark font-weight-bold">{{monitoring}}</span>
+                                        <p class="text-muted mb-0">
+                                            <small>Monitoring</small>
+                                        </p>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <span class="text-dark font-weight-bold">{{request.user.user_profile.credits}}</span>
+                                        <p class="text-muted mb-0">
+                                            <small>Credits</small>
+                                        </p>
+                                    </li>
+                                    <li class="col-sm-4">
+                                        <span class="text-dark font-weight-bold">{{request.user.user_plan.plan}}</span>
+                                        <p class="text-muted mb-0">
+                                            <small>Plan</small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-8 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Edit Profile</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputname">First Name</label>
+                                            <input type="text" class="form-control" value="{{user.first_name}}" id="exampleInputname" placeholder="First Name">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputname1">Last Name</label>
+                                            <input type="text" class="form-control" value="{{user.last_name}}" id="exampleInputname1" placeholder="Enter Last Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" value="{{user.email}}" class="form-control" id="exampleInputEmail1" placeholder="email address">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Website</label>
+                                    <input class="form-control" value="{{user.website_link}}" placeholder="http://cyberhawkz.com">
+                                </div>
+                                <div class="form-group mb-0 mt-5">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-12 col-md-12 userprofile">
+                                            <div class="userpic mb-2">
+                                                <img src="{{user.profile_img.url}}" alt="" class="userpicimg">
+                                            </div>
+                                            <br><br>
+                                            <p class="text-center">{{user.website_link}}</p>
+                                            <div class="text-center">
+                                                <a href="#" class="btn btn-primary mt-1"><i class="fe fe-camera  mr-1"></i>Change Photo</a><br>
+                                                <a href="#" class="btn btn-info mt-1 mb-3 mb-xl-0"><i class="fe fe-camera-off mr-1 mb-2"></i>Remove Photo</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label>New Password</label>
+                                                <input type="password" class="form-control" placeholder="New Password" name="new_pass">
+                                            </div>
+                                            <div class="form-group mb-0">
+                                                <label>Confirm Password</label>
+                                                <input type="password" class="form-control" placeholder="Confirm Password" name="conf_pass">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-right">
+                                <a href="#" class="btn btn-success mt-1">Save</a>
+                                <a href="#" class="btn btn-warning mt-1">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {% endblock content %}
